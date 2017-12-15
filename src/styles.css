@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+
+.main-content {
+    margin: auto 20em;
+}
+
+table {
+    width: 100%;
+    border: 1px solid gray;
+    margin:1em 0;
+}
+
+td:not(.total-sum) {
+    padding:0.5em;
+ 
+}
+
+th {
+    font-size: 1.5em;
+    padding: 0.5em !important;
+}
+
+
+td input {
+    text-align: right;
+}
+
+.sum-table {
+    text-align: right;
+    font-size: 2em;
+}
+
+a.as-button {
+    text-decoration: none;
+}
+
+a.as-button span:last-child {
+    padding: 0.2em 0;
+    display: inline-block;
+}
+
+.as-button .rounded {
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: 1px solid gray;
+}
+
+app-root .form-control {
+    display:inline-block;
+    width: 90%;
+}
+
+td:first-child input {
+    text-align: left;
+}
+
+table.budget-schema tr:last-child {
+    border-top: 1px solid gray;
+}
+
+.total-sum {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+table.total-sum {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+table.total-sum tr td:first-child {
+    font-size: 1.3em;   
+}
+
+.todo {
+    margin-top: 1em;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.add-margin {
+    margin: 2em 0;
+    margin-top: 0em;
+    padding: 1em;
+    border:1px solid gray;
+}
+
+app-excel-type {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+app-excel-type .btn.btn-default {
+    padding: 0.8em;
+    max-width: 5em;
+}
+
+app-excel-type .btn-specific {
+    background: none;
+    border: 1px solid gray;
+    padding: 0.5em 1em;
+}
+
+app-excel-type .btn-specific:hover {
+    color: black;
+}
+
+input + span {
+    left:-2em;
+    position: relative;
+}
+
+app-root app-excel-type .form-control {
+    padding-right: 2em;
+}
+

@@ -1,0 +1,64 @@
+<table class="budget-schema">
+    <th>{{heading | FirstLetterToCapital}}</th>
+    <th></th>
+
+    <tr *ngFor = "let row of inputRows">
+      <td>
+        <label [for] = "row.id">
+          {{row.txt | FirstLetterToCapital}}
+        </label>
+      </td>
+      <td>
+        <input 
+          appReadabledigitformatdirective 
+          type        = "tel" 
+          [name]      = "row.id" 
+          placeholder = "skriv beløb" 
+          class       = "form-control"
+          [(value)]   = "row.value"
+          (keyup)     = "update()"
+          mask        = ".">
+          <span> kr.</span>
+      </td>
+    </tr>
+    <tr>
+        <td>
+          {{pluraltypeName}} i alt
+        </td>
+        <td class="sum-table">{{value | readableDigitFormat}} kr.</td>
+    </tr>
+
+  </table>
+
+  <div class = "add-opens" [hidden] = "!addIsHidden">
+      <button (click) = "addIsHidden = false" class="btn btn-specific">
+          
+          <img src = "/styles/imagetest.svg" />
+          <span>Tilføj {{typeName}}</span>
+      </button>
+  </div>
+
+  <div [hidden] = "addIsHidden" class = "add-margin">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click) = "addIsHidden = true"><span aria-hidden="true">&times;</span></button>
+
+    <h3>Tilføj {{typeName}}</h3>
+    <br>
+  
+        <label for = "add">Navn på {{typeName}}</label>
+        <div class = "input-group">
+          <input   
+            type        = "tel" 
+            name        = "add" 
+            placeholder = "skriv navn" 
+            class       = "form-control"
+            [(ngModel)] = "nameToAdd"
+          >
+          <span class="input-group-btn">
+            <button type = "button" class = "btn btn-default" (click) = "addRow()">Tilføj</button>
+          </span>
+ 
+
+    </div>
+
+  </div>
+
