@@ -36,6 +36,7 @@ import { PeriodeComponent } from './components/periode/periode.component';
 import { MereEnd183dageComponent } from './components/mere-end183dage/mere-end183dage.component';
 import { PeriodsOf183Days } from './state/periode183Service';
 import { PeriodState } from './state/periodClass';
+import { RoutingService } from './routing/routingLogic';
 
 
 
@@ -70,9 +71,11 @@ import { PeriodState } from './state/periodClass';
     Texts,
     TxtSharedService,
     UrlRessourceService,
+    CalenderServices,
     StateService,
     PeriodsOf183Days,
-    PeriodState
+    PeriodState,
+    RoutingService
 
   ],
   bootstrap: [AppComponent]

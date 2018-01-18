@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutingService } from '../../routing/routingLogic';
 
 @Component({
   selector: 'app-buttons',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public routingService: RoutingService
+  ) { }
 
   ngOnInit() {
+
   }
+
+  router(direction: string) {
+    return this.routingService.findRoute(direction);
+  }
+
+
+
+
 
 }

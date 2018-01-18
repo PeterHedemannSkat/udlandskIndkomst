@@ -1,5 +1,4 @@
-<div class = "button-wrapper">
-  <button class = "btn">Tilbage</button>
-  <button class = "btn btn-primary">Næste</button>
-  
+<div class="button-wrapper">
+  <button *ngIf="router('back')" class="btn" [routerLink]="router('back')">Tilbage</button>
+  <button *ngIf="router('forward')" class="btn btn-primary" [routerLink]="router('forward')">Næste</button>
 </div>
