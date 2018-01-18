@@ -1,35 +1,4 @@
 
-<div class="main-content">
+<router-outlet></router-outlet>
 
-  <ng-container *ngFor = "let table of data">
-      <app-excel-type
-      [inputRows] = "table.data"
-      [heading]   = "table.headingTxt"
-      [id]        = "table.id"
-      [typeName]  = "table.singleTxt"
-      [(value)]   = "table.value"
-      [pluraltypeName] = "table.headingTxt"
-    ></app-excel-type>
-
-  </ng-container>
-
-  <table class="total-sum">
-    <tr>
-      <td class="total-sum">Resultat</td>
-      <td style = "text-align:right">{{getSum() | readableDigitFormat}} kr.</td>
-    </tr>
-  </table>
-
-  <div *ngIf = "getSum() !== null" [ngSwitch] = "getSum() >= 0" class="todo">
-      <p *ngSwitchCase="true">
-        {{_txt.txt.get('actionoverskud') | FirstLetterToCapital}}
-      </p>
-      <p *ngSwitchCase="false">
-        {{_txt.txt.get('actionunderskud') | FirstLetterToCapital}}
-      
-      </p>
-  </div>
-  
-
-</div>
-  
+<app-buttons></app-buttons>

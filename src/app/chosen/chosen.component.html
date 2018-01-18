@@ -1,0 +1,13 @@
+
+<label [attr.for] = "idDom">
+  {{label}}
+</label>
+<select 
+  [(ngModel)]       = "value"
+  [id]              = "idDom"
+  class             = "form-control form-control-lg" 
+  data-placeholder  = "Vælg ...">
+  <option *ngFor="let li of options" [value]="li.id" >
+    {{li.value}}
+  </option>
+</select>
