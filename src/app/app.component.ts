@@ -7,6 +7,7 @@ import { TxtSharedService } from './TxtSharedService/txtSharedService';
 import { RadiobuttonUX } from './sharedServices/radiobutton.skts';
 import { Keylist } from './chosen/keylist';
 import { RoutingService } from './routing/routingLogic';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -18,12 +19,17 @@ export class AppComponent implements OnInit {
 
   constructor (
     public _txt: TxtSharedService,
+    private route: Router,
 
   ) {}
 
 
   ngOnInit() {
 
+  }
+
+  getRouteNameId() {
+    return this.route.url.substr(1);
   }
 
 

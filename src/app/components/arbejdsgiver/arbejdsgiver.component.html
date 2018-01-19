@@ -1,0 +1,21 @@
+<app-radio-button 
+  [options] = "privatOffentlig"
+  label     = "Arbejder du for en offentlig eller privat arbejdsgiver?"
+  [(value)] = "state.arbejdsgiverForhold.publicPrivate" 
+></app-radio-button>
+
+<app-radio-button 
+  *ngIf     = "commons.getCountryGroup() !== 8"
+  [options] = "hjemland"
+  label     = "Hvad er din arbejdsgivers hjemland?"
+  [(value)] = "state.arbejdsgiverForhold.originOfFirm" 
+></app-radio-button>
+
+<div *ngIf = "isNotLocalCountry() && commons.getCountryGroup() !== 8">
+
+  <app-ja-nej 
+    [(value)] = "state.arbejdsgiverForhold.fixedOfficeInCountry"
+    [label]   = "text.get('fastDriftsStedLabel')" 
+  ></app-ja-nej>
+
+</div>

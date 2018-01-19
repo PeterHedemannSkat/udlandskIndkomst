@@ -8,8 +8,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Injectable()
 export class RoutingService {
 
-    index = 0;
-
     constructor (
         public taxPeriod: PeriodsOf183Days,
         public state: StateService,
@@ -21,8 +19,6 @@ export class RoutingService {
     allSteps() {
       return stepMapper.find(el => el.type === this.state.mainState.type).steps;
     }
-
-
 
     findRoute(direction: string) {
 

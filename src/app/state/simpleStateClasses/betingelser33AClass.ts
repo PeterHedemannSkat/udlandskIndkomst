@@ -9,6 +9,7 @@ export class Eligible33A {
     workInDKRelatingToWorkAbroad: Boolean;
     notInDK_OnSixthMonthDay: Boolean;
     notEndingStayWithHolidayInDK: Boolean;
+    vilAnvende33A: boolean;
 
 
     totalEligibleTo33A() {

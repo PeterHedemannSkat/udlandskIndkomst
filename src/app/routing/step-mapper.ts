@@ -1,7 +1,7 @@
 export const stepMapper = [
     {
         type: 'loon',
-        steps: ['intro', 'land', 'periode']
+        steps: ['intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage']
     }
 ];
 

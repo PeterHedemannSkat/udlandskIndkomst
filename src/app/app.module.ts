@@ -37,6 +37,13 @@ import { MereEnd183dageComponent } from './components/mere-end183dage/mere-end18
 import { PeriodsOf183Days } from './state/periode183Service';
 import { PeriodState } from './state/periodClass';
 import { RoutingService } from './routing/routingLogic';
+import { ArbejdsgiverComponent } from './components/arbejdsgiver/arbejdsgiver.component';
+import { CommonUdlandsService } from './servicesUdenlandskIndkomst/commonServices';
+import { TxtStringReplacerService } from './textServices/txtSubReplacerService';
+import { DiverseComponent } from './components/diverse/diverse.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { Betingelser33AComponent } from './components/betingelser33-a/betingelser33-a.component';
+import { OpholdiLandOver183dageComponent } from './components/opholdi-land-over183dage/opholdi-land-over183dage.component';
 
 
 
@@ -56,7 +63,12 @@ import { RoutingService } from './routing/routingLogic';
     LandvalgComponent,
     DatovaelgerInputFeltComponent,
     PeriodeComponent,
-    MereEnd183dageComponent
+    MereEnd183dageComponent,
+    ArbejdsgiverComponent,
+    DiverseComponent,
+    ProgressBarComponent,
+    Betingelser33AComponent,
+    OpholdiLandOver183dageComponent
 
 
   ],
@@ -75,7 +87,9 @@ import { RoutingService } from './routing/routingLogic';
     StateService,
     PeriodsOf183Days,
     PeriodState,
-    RoutingService
+    RoutingService,
+    CommonUdlandsService,
+    TxtStringReplacerService
 
   ],
   bootstrap: [AppComponent]

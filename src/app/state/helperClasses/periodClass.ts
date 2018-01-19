@@ -9,5 +9,4 @@ export class Period extends CalenderServices {
       return this.daysBetweenTwoDates(this.from, this.to);
     }
 
-
-  }
+}

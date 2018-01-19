@@ -1,0 +1,24 @@
+<app-ja-nej 
+  *ngIf     = "commons.getCountryGroup() === 6" 
+  [(value)] = "state.diverse.socialSecured" 
+  label     = "Er du social sikret i arbejdslandet?" 
+></app-ja-nej>
+
+<ng-container *ngIf = "commons.getCountryGroup() !== 8">
+    <app-ja-nej 
+    [(value)] = "state.diverse.arbejdsudlejet" 
+    label     = "Har din arbejdsgiver lejet dig ud til en udenlandsk arbejdsgiver?" 
+  ></app-ja-nej>
+  <p><a href="http://skat.dk/skat.aspx?oId=2234886" target="_blank">Læs mere om arbejdsudleje</a></p>
+</ng-container>
+
+<app-radio-button 
+  [options] = "specialCircum"
+  label     = "Gælder nogen af følgende situationer for dig? Jeg arbejder ..."
+  [(value)] = "state.diverse.specialCircumstances" 
+  (change)  = "toggleCheckBox()"
+></app-radio-button>
+
+
+<input type="checkbox" id="specialCircumstances" [(ngModel)] = "state.diverse.notSpecial" (change) = "setSpecial()">
+<label for="specialCircumstances">Ingen særlige omstændigheder</label>

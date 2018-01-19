@@ -4,6 +4,7 @@ import { TaxPeriod } from './helperClasses/taxPeriodClass';
 import { Injectable } from "@angular/core";
 import { StateService } from './stateContainer';
 import { PeriodState } from "./periodClass";
+import { DateWithYear } from "./helperClasses/DateInYear";
 
 
 /**
@@ -16,6 +17,7 @@ export class PeriodsOf183Days {
     countryID: string;
     stay: Period;
     periods: TaxPeriod[];
+    over183dageNormalCase: boolean;
 
 
     constructor (

@@ -1,0 +1,20 @@
+
+<div *ngIf = "specialPeriods.getPeriodIdTypeForCountry() === 2; else multi">
+
+  <app-ja-nej 
+    [(value)] = "specialPeriods.over183dageNormalCase" 
+    label   = "Befinder du dig over 183 dage i en 12 måneders periode i landet?" 
+   
+  ></app-ja-nej>
+
+  <p>Ekstra forklaring her ...</p>
+  
+</div>
+
+<ng-template #multi>
+
+    <div *ngFor="let period of specialPeriods.getPeriods()">
+        {{period.stay.from}} - {{period.stay.to}}
+      </div>-->
+
+</ng-template>

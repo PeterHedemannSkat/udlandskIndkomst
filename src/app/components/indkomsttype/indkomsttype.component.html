@@ -1,3 +1,5 @@
-<p>
-  indkomsttype works!
-</p>
+<app-radio-button 
+  [options] = "typeOptions"
+  label     = "Vælg indkomst"
+  [(value)] = "state.mainState.type" 
+></app-radio-button>

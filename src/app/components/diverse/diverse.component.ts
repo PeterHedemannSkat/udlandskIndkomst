@@ -2,16 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
-import { typeOptions } from './indkomstTyper';
+import { specialCircum } from './saerligeOptions';
 
 @Component({
-  selector: 'app-indkomsttype',
-  templateUrl: './indkomsttype.component.html',
+  selector: 'app-diverse',
+  templateUrl: './diverse.component.html',
   styles: []
 })
-export class IndkomsttypeComponent implements OnInit {
+export class DiverseComponent implements OnInit {
 
-  typeOptions = typeOptions;
+  specialCircum = specialCircum;
+
 
   constructor(
     public commons: CommonUdlandsService,
@@ -21,5 +22,16 @@ export class IndkomsttypeComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  setSpecial() {
+    if (this.state.diverse.notSpecial === true) {
+      this.state.diverse.specialCircumstances = '';
+    }
+  }
+
+  toggleCheckBox() {
+    this.state.diverse.notSpecial = false;
+  }
+
 
 }

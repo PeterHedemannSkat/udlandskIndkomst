@@ -7,6 +7,7 @@ import { periodTerms } from './texts/periodTerms';
 import { weekdays } from './texts/weekDaysDK';
 import { laeringsPakke } from './texts/laeringsPakkeNames';
 import { regnskab } from './texts/budgetBeregner';
+import { udlandstekster } from './texts/udlandsTekster';
 
 
 
@@ -26,9 +27,7 @@ export class ExternalData implements InMemoryWebApiModule {
         createDb() {
 
             return {
-
-                regnskab
-
+                udlandstekster
             };
         }
     }
