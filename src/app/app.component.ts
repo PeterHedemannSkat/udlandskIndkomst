@@ -8,6 +8,7 @@ import { RadiobuttonUX } from './sharedServices/radiobutton.skts';
 import { Keylist } from './chosen/keylist';
 import { RoutingService } from './routing/routingLogic';
 import { Router } from '@angular/router';
+import { TestService } from './testValues/testCases';
 
 
 @Component({
@@ -20,17 +21,21 @@ export class AppComponent implements OnInit {
   constructor (
     public _txt: TxtSharedService,
     private route: Router,
+    private test: TestService
 
   ) {}
 
 
   ngOnInit() {
+    this.test.setState();
 
   }
 
   getRouteNameId() {
     return this.route.url.substr(1);
   }
+
+
 
 
 

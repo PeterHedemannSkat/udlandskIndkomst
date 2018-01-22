@@ -4,6 +4,8 @@ import { offentligPrivat } from './optionsOffentligPrivat';
 import { employeeOrigin } from './arbejdsgiversHjemland';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
+import { PeriodState } from '../../state/periodClass';
+
 
 @Component({
   selector: 'app-arbejdsgiver',
@@ -18,7 +20,8 @@ export class ArbejdsgiverComponent implements OnInit {
   constructor(
     public commons: CommonUdlandsService,
     public state: StateService,
-    public text: TxtSharedService
+    public text: TxtSharedService,
+    public period: PeriodState
   ) { }
 
   ngOnInit() {

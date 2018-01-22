@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { countries } from '../dataSkatUdlandsModul/countries.data';
 import { StateService } from '../state/stateContainer';
+import { TxtSharedService } from '../TxtSharedService/txtSharedService';
+import { error } from 'selenium-webdriver';
 
 @Injectable()
 export class CommonUdlandsService {
 
-
     constructor (
+
         private state: StateService
     ) {}
 
@@ -23,6 +25,20 @@ export class CommonUdlandsService {
         return countryProp.group;
 
     }
+
+    getCountryID(countryName: string) {
+
+        const countryProp = countries.find(el => el.land === countryName);
+
+        if (countryProp) {
+            return countryProp.id;
+        } else {
+            throw new Error('Fandt ikke land');
+        }
+
+    }
+
+
 
     private getCountryPropertries () {
         return countries.find(countryObj => countryObj.id === this.state.mainState.land);

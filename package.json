@@ -24,8 +24,12 @@
     "@types/lodash": "^4.14.88",
     "angular-in-memory-web-api": "^0.5.1",
     "bootstrap": "^3.3.7",
+    "chosen-js": "^1.8.2",
+    "chosen-npm": "^1.4.2",
     "core-js": "^2.4.1",
+    "install": "^0.10.2",
     "lodash": "^4.17.4",
+    "npm": "^5.6.0",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },

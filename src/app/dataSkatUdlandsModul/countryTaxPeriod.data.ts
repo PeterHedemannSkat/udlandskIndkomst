@@ -68,7 +68,7 @@ const wierdPeriods = [
         id: 'ZM',
         startDate: '1-4'
     }
-]
+];
 
 
 export const mapPeriods: CountryPeriodMap[] = [].concat(

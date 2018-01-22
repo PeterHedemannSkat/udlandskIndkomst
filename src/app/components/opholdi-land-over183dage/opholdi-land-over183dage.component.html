@@ -13,8 +13,17 @@
 
 <ng-template #multi>
 
-    <div *ngFor="let period of specialPeriods.getPeriods()">
-        {{period.stay.from}} - {{period.stay.to}}
-      </div>-->
+  <div *ngFor="let period of specialPeriods.periods">
+    <div class = "period">
+      {{printService.printPeriod(period.taxPeriod.from, period.taxPeriod.to)}}
+    </div>
+
+    <app-ja-nej   
+      [(value)] = "period.userAbove_183" 
+      [label]   = "labelTxt()" 
+    ></app-ja-nej>   
+
+  </div>
+ 
 
 </ng-template>

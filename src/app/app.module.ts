@@ -33,7 +33,6 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { LandvalgComponent } from './components/landvalg/landvalg.component';
 import { DatovaelgerInputFeltComponent } from './sharedServices/datePicker/datovaelger-input-felt.component';
 import { PeriodeComponent } from './components/periode/periode.component';
-import { MereEnd183dageComponent } from './components/mere-end183dage/mere-end183dage.component';
 import { PeriodsOf183Days } from './state/periode183Service';
 import { PeriodState } from './state/periodClass';
 import { RoutingService } from './routing/routingLogic';
@@ -44,6 +43,9 @@ import { DiverseComponent } from './components/diverse/diverse.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { Betingelser33AComponent } from './components/betingelser33-a/betingelser33-a.component';
 import { OpholdiLandOver183dageComponent } from './components/opholdi-land-over183dage/opholdi-land-over183dage.component';
+import { PrintService } from './TxtSharedService/printServices';
+import { TestService } from './testValues/testCases';
+import { IndkomstSkatteForholdComponent } from './components/indkomst-skatte-forhold/indkomst-skatte-forhold.component';
 
 
 
@@ -63,12 +65,12 @@ import { OpholdiLandOver183dageComponent } from './components/opholdi-land-over1
     LandvalgComponent,
     DatovaelgerInputFeltComponent,
     PeriodeComponent,
-    MereEnd183dageComponent,
     ArbejdsgiverComponent,
     DiverseComponent,
     ProgressBarComponent,
     Betingelser33AComponent,
-    OpholdiLandOver183dageComponent
+    OpholdiLandOver183dageComponent,
+    IndkomstSkatteForholdComponent
 
 
   ],
@@ -89,7 +91,8 @@ import { OpholdiLandOver183dageComponent } from './components/opholdi-land-over1
     PeriodState,
     RoutingService,
     CommonUdlandsService,
-    TxtStringReplacerService
+    PrintService,
+    TestService
 
   ],
   bootstrap: [AppComponent]

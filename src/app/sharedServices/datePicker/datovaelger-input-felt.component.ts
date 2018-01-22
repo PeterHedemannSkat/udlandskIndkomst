@@ -27,6 +27,7 @@ export class DatovaelgerInputFeltComponent implements AfterViewInit, OnInit, Aft
     }
 
     set modelStr(value: string) {
+
         this._modelStr = value;
         this.model = datePickerController.getSelectedDate(this.id);
 
@@ -60,11 +61,19 @@ export class DatovaelgerInputFeltComponent implements AfterViewInit, OnInit, Aft
             elements = $(`#${this.id}`),
             element = elements ? elements[0] : null;
 
-        if (element && element.value && element.value !== this.model) {
+        if (element && this.model) {
+            const serializedDate = `${this.prependZero(this.model.getDate())}/${this.prependZero(this.model.getMonth() + 1)}/${this.model.getFullYear()}`;
+            element.value = serializedDate;
+        }
+
+        if (element && element.value && element.value !== this.modelStr) {
             // Hack: Vent et tick for at undgå devMode fejlen:
             // Expression has changed after it was checked.
 
-            setTimeout(() => this.modelStr = element.value);
+            setTimeout(() => {
+                datePickerController.setDateFromInput(this.id);
+                this.modelStr = element.value;
+            });
         }
 
     }
@@ -89,5 +98,9 @@ export class DatovaelgerInputFeltComponent implements AfterViewInit, OnInit, Aft
 
     ngOnDestroy() {
         datePickerController.destroyDatePicker(this.id);
+    }
+
+    private prependZero(number: number) {
+        return (number < 10) ? `0${number}` : number;
     }
 }

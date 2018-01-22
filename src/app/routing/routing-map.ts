@@ -8,6 +8,7 @@ import { ArbejdsgiverComponent } from '../components/arbejdsgiver/arbejdsgiver.c
 import { DiverseComponent } from "../components/diverse/diverse.component";
 import { Betingelser33AComponent } from '../components/betingelser33-a/betingelser33-a.component';
 import { OpholdiLandOver183dageComponent } from "../components/opholdi-land-over183dage/opholdi-land-over183dage.component";
+import { IndkomstSkatteForholdComponent } from "../components/indkomst-skatte-forhold/indkomst-skatte-forhold.component";
 
 export const routes: Routes = [{
     path: '',
@@ -45,7 +46,12 @@ export const routes: Routes = [{
   {
     path: 'opholdOver183dage',
     component: OpholdiLandOver183dageComponent
+  },
+  {
+    path: 'indkomstSkatteForhold',
+    component: IndkomstSkatteForholdComponent
   }
+
 
 ];
 

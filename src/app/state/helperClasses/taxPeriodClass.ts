@@ -6,8 +6,9 @@ export class TaxPeriod {
 
   stayInPeriod: Period;
   userAbove_183: boolean;
+  country: string;
 
-  constructor(public stay: Period, public taxPeriod: Period) {
+  constructor(public stay: Period, public taxPeriod: Period, public land: string) {
     this.stayInPeriod = this.getStayInTaxPeriod();
     this.userAbove_183 = undefined;
 

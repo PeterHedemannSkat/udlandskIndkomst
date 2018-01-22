@@ -13,6 +13,10 @@ export const urlMapper: UrlRessources[] = [
     {
         local: 'udlandstekster',
         skatdk: '0'
+    },
+    {
+        local: 'overskrifter',
+        skatdk: '0'
     }
 
 ];

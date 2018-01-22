@@ -9,7 +9,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "assets/datePicker.css",
+        "assets/date_picker.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -20,9 +22,15 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "assets/skat.min.css"
+        "assets/skat.min.css",
+        "../node_modules/chosen-js/chosen.min.css",
+        "assets/yetAnother.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/jquery.min.js",
+        "../node_modules/chosen-js/chosen.jquery.js",
+        "assets/calender.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

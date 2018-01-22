@@ -11,9 +11,6 @@ import { PeriodState } from '../../state/periodClass';
 })
 export class PeriodeComponent implements OnInit {
 
-  fromDate: Date;
-  toDate: Date;
-
   testDisabled = false;
 
   constructor(

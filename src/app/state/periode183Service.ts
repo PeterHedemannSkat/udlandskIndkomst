@@ -88,7 +88,7 @@ export class PeriodsOf183Days {
 
         const enrichedContainer = container.map(el => {
 
-            return new TaxPeriod(stayPeriod, el);
+            return new TaxPeriod(stayPeriod, el, this.model.mainState.land);
 
         });
 

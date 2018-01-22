@@ -1,5 +1,7 @@
 export const neededTxt = [
 
-    'udlandstekster'
+    'udlandstekster',
+    'monthNames',
+    'overskrifter'
 
 ];

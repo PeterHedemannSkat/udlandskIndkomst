@@ -1,119 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+body > app-root .main-content {
+    max-width: 560px;
+    margin: 0 auto;
+} 
 
-.main-content {
-    margin: auto 20em;
-}
-
-table {
-    width: 100%;
-    border: 1px solid gray;
-    margin:1em 0;
-}
-
-td:not(.total-sum) {
-    padding:0.5em;
- 
-}
-
-th {
-    font-size: 1.5em;
-    padding: 0.5em !important;
-}
-
-
-td input {
-    text-align: right;
-}
-
-.sum-table {
-    text-align: right;
-    font-size: 2em;
-}
-
-a.as-button {
-    text-decoration: none;
-}
-
-a.as-button span:last-child {
-    padding: 0.2em 0;
-    display: inline-block;
-}
-
-.as-button .rounded {
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0.2em 0.5em;
-    border: 1px solid gray;
-}
-
-app-root .form-control {
-    display:inline-block;
-    width: 90%;
-}
-
-td:first-child input {
-    text-align: left;
-}
-
-table.budget-schema tr:last-child {
-    border-top: 1px solid gray;
-}
-
-.total-sum {
-    font-size: 2em;
-    padding: 0.5em;
-}
-
-table.total-sum {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-
-table.total-sum tr td:first-child {
-    font-size: 1.3em;   
-}
-
-.todo {
-    margin-top: 1em;
-    text-align: center;
-    font-style: italic;
-    font-size: 1.3em;
-}
-
-.add-margin {
-    margin: 2em 0;
-    margin-top: 0em;
-    padding: 1em;
-    border:1px solid gray;
-}
-
-app-excel-type {
-    height: 100%;
-    width: 100%;
+.elements .row:not(:last-child) {
     margin-bottom: 2em;
 }
 
-app-excel-type .btn.btn-default {
-    padding: 0.8em;
-    max-width: 5em;
+.btn, .form-control {
+    border-radius:0 !important;
 }
 
-app-excel-type .btn-specific {
-    background: none;
-    border: 1px solid gray;
-    padding: 0.5em 1em;
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+    border-bottom-left-radius:0 !important;
+
 }
 
-app-excel-type .btn-specific:hover {
-    color: black;
+.btn-group-vertical>.btn:first-child:not(:first-child) {
+    border-top-right-radius:0 !important;
+
 }
 
-input + span {
-    left:-2em;
-    position: relative;
+.underline {
+    border-bottom: 1px dotted white;
 }
 
-app-root app-excel-type .form-control {
-    padding-right: 2em;
+.lable-for-radio {
+    display: block;
+    margin:0.5em 0;
 }
 
+app-radio-button .btn-group-vertical {
+    width: 100%;
+}
+
+app-radio-button .btn-group-vertical .btn {
+    padding: 1.3em;
+    text-align: initial;
+}
+
+app-chosen .chosen-container-single .chosen-single {
+    background-position: 2px 16px;
+}
+
+app-chosen .chosen-container-single .chosen-single, .chosen-container-single .chosen-results, .chosen-container-single .chosen-search {
+    border-radius: 0;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    text-align: left;
+} 
+
+app-chosen .chosen-container-single .chosen-single {
+    border-color: #395f77;
+    min-height: 3rem;
+    padding: 4px 12px;
+}
+
+app-chosen .chosen-container-single .chosen-single {
+    background: white;
+}
+
+
+.button-wrapper  {
+    margin-top: 1.5em;
+}
+
+.progress-bar-custom {
+    margin-bottom: 1.5em;
+}
+
+.well h2 {
+    font-size: 2.5rem;
+} 
