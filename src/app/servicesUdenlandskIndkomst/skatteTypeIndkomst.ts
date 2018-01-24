@@ -4,6 +4,8 @@ import { PrintService } from '../TxtSharedService/printServices';
 import { CommonUdlandsService } from './commonServices';
 import { StateService } from '../state/stateContainer';
 import { PeriodState } from '../state/periodClass';
+import { UrlRessourceService } from '../urlRessource/urlressource';
+import { loonIndkomstType } from '../dataMapping/loonIndkomstMap';
 
 
 @Injectable()
@@ -14,10 +16,59 @@ export class SkatteForholdIndkomstService {
         public printService: PrintService,
         public commonService: CommonUdlandsService,
         public state: StateService,
-        public period: PeriodState
+        public period: PeriodState,
+        public dataService: UrlRessourceService
     ) {}
 
-    buildVariableSet(over183dage: boolean) {
+    get data () {
+        /**
+         * returnerer null indtil data er hentet, hvorefter Angular opdaterer og kalder data ...
+         */
+        return this.dataService.getData('app/skattetypeIndkomst');
+    }
+
+    getBeskatningsType() {
+
+        if (this.data) {
+
+            const
+                pos = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(true))),
+                neg = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(false)));
+
+            return pos;
+
+        } else {
+
+            throw new Error('data er ikke hentet!');
+
+
+        }
+
+    }
+
+    private translateToBeskatningstype(data: any) {
+
+        return loonIndkomstType
+            .find(el => {
+                return el.indkomst.indexOf(Number(data.result.indkomst)) > -1  && el.skat === data.result.skat;
+            })
+            .value;
+
+    }
+
+    private getType_(set: any) {
+
+        return this.data
+            .find(ruleSet => {
+                return set.every(el => {
+                    return ruleSet.rowParameters[el.key] === el.value;
+                });
+            });
+
+    }
+
+
+    private buildVariableSet(over183dage: boolean) {
 
         const set = [
             {
@@ -131,7 +182,7 @@ export class SkatteForholdIndkomstService {
 
     }
 
-    getOriginOfFirm() {
+    private getOriginOfFirm() {
 
         const
             fixed      = this.state.arbejdsgiverForhold.fixedOfficeInCountry,
@@ -168,7 +219,5 @@ export class SkatteForholdIndkomstService {
 
           return _var3 ? _var3.value : -1;
       }
-
-
 
 }

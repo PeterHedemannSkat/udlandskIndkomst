@@ -46,6 +46,7 @@ import { OpholdiLandOver183dageComponent } from './components/opholdi-land-over1
 import { PrintService } from './TxtSharedService/printServices';
 import { TestService } from './testValues/testCases';
 import { IndkomstSkatteForholdComponent } from './components/indkomst-skatte-forhold/indkomst-skatte-forhold.component';
+import { SkatteForholdIndkomstService } from './servicesUdenlandskIndkomst/skatteTypeIndkomst';
 
 
 
@@ -92,7 +93,8 @@ import { IndkomstSkatteForholdComponent } from './components/indkomst-skatte-for
     RoutingService,
     CommonUdlandsService,
     PrintService,
-    TestService
+    TestService,
+    SkatteForholdIndkomstService
 
   ],
   bootstrap: [AppComponent]

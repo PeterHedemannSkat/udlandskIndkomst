@@ -4,6 +4,8 @@ import { periodTerms } from './texts/periodTerms';
 import { weekdays } from './texts/weekDaysDK';
 import { udlandstekster } from './texts/udlandsTekster';
 import { overskrifter } from './texts/overskrifter';
+import { skattetypeIndkomst } from './dataForeignIncome';
+import { skatteTyperConclusion } from './texts/skatteTyperIndkomst';
 
 
 
@@ -25,7 +27,9 @@ export class ExternalData implements InMemoryWebApiModule {
             return {
                 udlandstekster,
                 monthNames,
-                overskrifter
+                overskrifter,
+                skattetypeIndkomst,
+                skatteTyperConclusion
             };
         }
     }

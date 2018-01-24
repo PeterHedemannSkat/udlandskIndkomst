@@ -26,9 +26,9 @@ export class TestService {
                 type = 'loon',
                 arbejdsgiverOrigin = 'DK', // workCountry, other
                 privatOffentlig = 'privat',
-                land = 'Frankrig', // Storbritannien Australien
+                land = 'Sverige', // Storbritannien Australien
                 fastKontor = true,
-                startrout = 'intro', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
+                startrout = 'opholdOver183dage', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
                 udlejet = false,
                 vilAnvende33A = true,
                 kompleks183dage = [true, false, true],

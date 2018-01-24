@@ -1,3 +1,7 @@
-<p>
-  indkomst-skatte-forhold works!
-</p>
+
+
+<div *ngIf = "skatteforhold.data">
+    <div [innerHTML] = "printTextSkatteType()"></div>
+</div>
+
+

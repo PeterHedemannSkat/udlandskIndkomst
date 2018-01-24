@@ -17,6 +17,15 @@ export const urlMapper: UrlRessources[] = [
     {
         local: 'overskrifter',
         skatdk: '0'
+    },
+    {
+        local: 'app/skattetypeIndkomst',
+        skatdk: 'skattetypeIndkomst.json'
+    },
+    {
+        local: 'skatteTyperConclusion',
+        skatdk: '0'
     }
+
 
 ];

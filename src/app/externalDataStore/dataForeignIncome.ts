@@ -1,4 +1,4 @@
-export const data = [
+export const skattetypeIndkomst = [
   {
     "rowParameters": {
       "A": 1,
