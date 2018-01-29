@@ -12,11 +12,11 @@ export const urlMapper: UrlRessources[] = [
     },
     {
         local: 'udlandstekster',
-        skatdk: '0'
+        skatdk: '369'
     },
     {
         local: 'overskrifter',
-        skatdk: '0'
+        skatdk: '354'
     },
     {
         local: 'app/skattetypeIndkomst',
@@ -24,27 +24,27 @@ export const urlMapper: UrlRessources[] = [
     },
     {
         local: 'skatteTyperConclusion',
-        skatdk: '0'
+        skatdk: '364'
     },
     {
         local: 'labelTxt',
-        skatdk: '0'
+        skatdk: '329'
     },
     {
         local: 'incomeTypes',
-        skatdk: '0'
+        skatdk: '283'
     },
     {
         local: 'employeeOrigin',
-        skatdk: '0'
+        skatdk: '277'
     },
     {
         local: 'offentligPrivat',
-        skatdk: '0'
+        skatdk: '299'
     },
     {
         local: 'saerligeOmstaendigheder',
-        skatdk: '0'
+        skatdk: '312'
     }
 
 
