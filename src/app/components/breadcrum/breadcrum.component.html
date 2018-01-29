@@ -1,0 +1,8 @@
+<div class="horizontal-test">
+  <div class = "expanded-sub" [style.width] = "horizontalPxLength()" >
+    <ul class = "skts-navbar-wizard">
+      <li *ngFor="let step of renderBreadCrum()" [class.active] = "currentRoute(step.id)"><span>{{step.name}}</span></li>
+    </ul>
+  </div>
+
+</div>

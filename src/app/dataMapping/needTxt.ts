@@ -3,6 +3,11 @@ export const neededTxt = [
     'udlandstekster',
     'monthNames',
     'overskrifter',
-    'skatteTyperConclusion'
+    'skatteTyperConclusion',
+    'labelTxt',
+    'incomeTypes',
+    'employeeOrigin',
+    'offentligPrivat',
+    'saerligeOmstaendigheder'
 
 ];

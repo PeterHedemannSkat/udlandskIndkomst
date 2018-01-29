@@ -35,6 +35,9 @@ export class AppComponent implements OnInit {
     return this.route.url.substr(1);
   }
 
+  testing() {
+    return 'A';
+  }
 
 
 

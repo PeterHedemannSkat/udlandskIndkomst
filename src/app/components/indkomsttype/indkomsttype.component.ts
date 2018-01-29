@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
-import { typeOptions } from './indkomstTyper';
+import { PrintService } from '../../TxtSharedService/printServices';
 
 @Component({
   selector: 'app-indkomsttype',
@@ -11,15 +11,21 @@ import { typeOptions } from './indkomstTyper';
 })
 export class IndkomsttypeComponent implements OnInit {
 
-  typeOptions = typeOptions;
 
   constructor(
     public commons: CommonUdlandsService,
     public state: StateService,
-    public text: TxtSharedService
+    public text: TxtSharedService,
+    public printTxt: PrintService
+
   ) { }
 
   ngOnInit() {
+
+
+
   }
+
+
 
 }

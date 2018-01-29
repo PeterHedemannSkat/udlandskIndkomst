@@ -13,3 +13,11 @@ export interface StoredData {
   data: any;
   observable: Observable<any>;
 }
+
+export interface DAPDataType {
+  id: string;
+  da: string;
+  en?: string;
+}
+
+

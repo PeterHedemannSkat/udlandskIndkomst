@@ -4,6 +4,7 @@ import { PrintService } from '../../TxtSharedService/printServices';
 import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
 import { StateService } from '../../state/stateContainer';
 import { PeriodState } from '../../state/periodClass';
+import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
 
 @Component({
   selector: 'app-opholdi-land-over183dage',
@@ -17,7 +18,8 @@ export class OpholdiLandOver183dageComponent implements OnInit {
     public printService: PrintService,
     public commonService: CommonUdlandsService,
     public state: StateService,
-    public period: PeriodState
+    public period: PeriodState,
+    public text: TxtSharedService
   ) { }
 
   ngOnInit() {
@@ -47,10 +49,6 @@ export class OpholdiLandOver183dageComponent implements OnInit {
         return true;
 
     }
-  }
-
-  labelTxt() {
-    return `Opholder du dig i mere end 183 dage i ${this.commonService.getCountryNameReg()} i denne periode?`;
   }
 
 

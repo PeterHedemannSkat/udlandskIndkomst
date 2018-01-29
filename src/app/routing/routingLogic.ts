@@ -59,6 +59,10 @@ export class RoutingService {
 
     }
 
+    currentRouteId() {
+       return this.route.url.substr(1);
+    }
+
     findRoute(direction: string) {
 
         const

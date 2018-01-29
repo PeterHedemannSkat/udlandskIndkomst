@@ -3,11 +3,11 @@
 
   <app-ja-nej 
     [(value)] = "specialPeriods.over183dageNormalCase" 
-    label   = "Befinder du dig over 183 dage i en 12 måneders periode i landet?" 
+    [label]   = "text.get('label183DageNormal')" 
    
   ></app-ja-nej>
 
-  <p>Ekstra forklaring her ...</p>
+  <p>{{text.get('label183DageNormal_expanded')}}</p>
   
 </div>
 
@@ -20,7 +20,7 @@
 
     <app-ja-nej   
       [(value)] = "period.userAbove_183" 
-      [label]   = "labelTxt()" 
+      [label]   = "text.get('over183dageComplex')" 
     ></app-ja-nej>   
 
   </div>

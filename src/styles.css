@@ -72,3 +72,51 @@ app-chosen .chosen-container-single .chosen-single {
 .well h2 {
     font-size: 2.5rem;
 } 
+
+.router-outlet {
+    min-height: 20em !important;
+}
+
+.period-tax {
+    padding-left: 1em;
+    border-left: 1px solid black;
+    margin-left:1em;
+}
+
+.result-indkomst h3 {
+    font-size: 1.4em;
+}
+
+.result-indkomst h4 {
+    font-size: 1.2em;
+}
+
+.period-header {
+    margin-top:1em;
+    border-bottom: 1px dotted gray;
+}
+
+.horizontal-test {
+    overflow-x: scroll;
+
+}
+
+.expanded-sub {
+    width:100em;
+}
+
+.horizontal-test ul {
+    margin: 1em 0;
+    padding-left: 0;
+}
+
+.horizontal-test li {
+    display: inline-block;
+}
+
+
+.horizontal-test li span:last-child{
+    display: inline-block;
+    padding: 0 1em;
+}
+

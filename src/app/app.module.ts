@@ -47,6 +47,7 @@ import { PrintService } from './TxtSharedService/printServices';
 import { TestService } from './testValues/testCases';
 import { IndkomstSkatteForholdComponent } from './components/indkomst-skatte-forhold/indkomst-skatte-forhold.component';
 import { SkatteForholdIndkomstService } from './servicesUdenlandskIndkomst/skatteTypeIndkomst';
+import { BreadcrumComponent } from './components/breadcrum/breadcrum.component';
 
 
 
@@ -71,7 +72,8 @@ import { SkatteForholdIndkomstService } from './servicesUdenlandskIndkomst/skatt
     ProgressBarComponent,
     Betingelser33AComponent,
     OpholdiLandOver183dageComponent,
-    IndkomstSkatteForholdComponent
+    IndkomstSkatteForholdComponent,
+    BreadcrumComponent
 
 
   ],
@@ -79,8 +81,8 @@ import { SkatteForholdIndkomstService } from './servicesUdenlandskIndkomst/skatt
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes, {useHash: true}),
-    InMemoryWebApiModule.forRoot( ExternalData )
+    RouterModule.forRoot(routes, {useHash: true})
+    //, InMemoryWebApiModule.forRoot( ExternalData )
   ],
   providers: [
     Texts,

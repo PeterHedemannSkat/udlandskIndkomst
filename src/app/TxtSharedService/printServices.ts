@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { TxtSharedService } from './txtSharedService';
+import { DAPDataType } from '../interfaces/commonInterfaces';
 
 @Injectable()
 export class PrintService {
@@ -24,6 +25,22 @@ export class PrintService {
             return '';
         }
 
+    }
+
+    transformToOptions(group_: string) {
+
+        const group = this.text.getGroup(group_);
+
+        if (group) {
+          return group.map(el => {
+            return {
+              text: el.txt,
+              value: el.id
+            };
+          });
+        } else {
+          return [];
+        }
 
     }
 }

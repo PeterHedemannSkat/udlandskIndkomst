@@ -1,0 +1,2 @@
+        "assets/jquery.min.js",
+        "assets/skat.min.css",

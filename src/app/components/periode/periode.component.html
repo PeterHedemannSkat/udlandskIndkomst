@@ -1,10 +1,10 @@
 <app-dato-vaelger
   [(model)] = "period.from" 
-  label     = "Fra dato (den dag du ankommer til landet)"
+  [label]   = "text.get('fraPeriode')"
 ></app-dato-vaelger>      
 
 <app-dato-vaelger 
   [(model)] = "period.to"
-  label     = "Til dato (den dag du forlader landet)"
+  [label]   = "text.get('tilPeriode')"
   [disabled] = "testDisabled"
 ></app-dato-vaelger>  

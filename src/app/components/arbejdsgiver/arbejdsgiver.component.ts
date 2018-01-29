@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
-import { offentligPrivat } from './optionsOffentligPrivat';
-import { employeeOrigin } from './arbejdsgiversHjemland';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
 import { PeriodState } from '../../state/periodClass';
+import { PrintService } from '../../TxtSharedService/printServices';
 
 
 @Component({
@@ -14,21 +13,16 @@ import { PeriodState } from '../../state/periodClass';
 })
 export class ArbejdsgiverComponent implements OnInit {
 
-  privatOffentlig = offentligPrivat;
-  hjemland        = employeeOrigin;
 
   constructor(
     public commons: CommonUdlandsService,
     public state: StateService,
     public text: TxtSharedService,
-    public period: PeriodState
+    public period: PeriodState,
+    public print: PrintService
   ) { }
 
-  ngOnInit() {
-
-    this.hjemland.find(el => el.value === 'workCountry').text = this.commons.getCountryNameReg();
-
-  }
+  ngOnInit() {}
 
   isNotLocalCountry () {
 
@@ -37,5 +31,17 @@ export class ArbejdsgiverComponent implements OnInit {
 
   }
 
+  getoptionsOrigin() {
+
+    const list = this.print.transformToOptions('employeeOrigin');
+
+    if (list.length > 0) {
+      list.find(el => el.value === 'workCountry').text = this.commons.getCountryNameReg();
+      return list;
+    } else {
+      return [];
+    }
+
+  }
 
 }

@@ -41,9 +41,9 @@ export class TxtSharedService implements OnInit {
 
         this._lang.setRessources(urlMapper);
         this._lang.getMultipleTxt(neededTxt).subscribe(el => {
-
+        console.log(el);
         this.add(el);
-
+        
 
         });
 

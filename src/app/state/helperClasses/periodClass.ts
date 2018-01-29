@@ -1,12 +1,20 @@
 import { CalenderServices } from '../../sharedServices/dateServices';
+import * as moment from 'moment';
 
-export class Period extends CalenderServices {
+export class Period {
 
     constructor(public from: Date, public to: Date) {
-      super();
+
     }
     daysBetween() {
-      return this.daysBetweenTwoDates(this.from, this.to);
+
+      const
+        from = moment(this.from),
+        to = moment(this.to);
+
+      return from.diff('days');
+
+      // return this.daysBetweenTwoDates(this.from, this.to);
     }
 
 }

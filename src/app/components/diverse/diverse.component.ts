@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
-import { specialCircum } from './saerligeOptions';
+import { PrintService } from '../../TxtSharedService/printServices';
 
 @Component({
   selector: 'app-diverse',
@@ -11,13 +11,11 @@ import { specialCircum } from './saerligeOptions';
 })
 export class DiverseComponent implements OnInit {
 
-  specialCircum = specialCircum;
-
-
   constructor(
     public commons: CommonUdlandsService,
     public state: StateService,
-    public text: TxtSharedService
+    public text: TxtSharedService,
+    public print: PrintService
   ) { }
 
   ngOnInit() {

@@ -6,18 +6,11 @@ import { udlandstekster } from './texts/udlandsTekster';
 import { overskrifter } from './texts/overskrifter';
 import { skattetypeIndkomst } from './dataForeignIncome';
 import { skatteTyperConclusion } from './texts/skatteTyperIndkomst';
-
-
-
-
-export interface ManualDeadLines {
-
-    Id: string;
-    year: number;
-    Periode: number;
-    Frist: string;
-
-}
+import { labelTxt } from './texts/labelTxt';
+import { incomeTypes } from './texts/selects/incomeTypes';
+import { employeeOrigin } from './texts/selects/arbejdsgiverLand';
+import { offentligPrivat } from './texts/selects/offentligprivat';
+import { saerligeOmstaendigheder } from './texts/selects/saerligeomstaendinger';
 
 
 export class ExternalData implements InMemoryWebApiModule {
@@ -29,7 +22,12 @@ export class ExternalData implements InMemoryWebApiModule {
                 monthNames,
                 overskrifter,
                 skattetypeIndkomst,
-                skatteTyperConclusion
+                skatteTyperConclusion,
+                labelTxt,
+                incomeTypes,
+                employeeOrigin,
+                offentligPrivat,
+                saerligeOmstaendigheder
             };
         }
     }

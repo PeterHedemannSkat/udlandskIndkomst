@@ -1,7 +1,26 @@
 
+<div *ngIf = "skatteforhold.data" class = "result-indkomst">
 
-<div *ngIf = "skatteforhold.data">
-    <div [innerHTML] = "printTextSkatteType()"></div>
+    <div *ngIf = "beskatningsTypeIsIndifferent() || taxPeriods.getPeriodIdTypeForCountry() === 2 else multipleTaxYears" [innerHTML] = "printTextSkatteType()"></div>
+    
+    <ng-template #multipleTaxYears> 
+
+      <div *ngFor = "let period of renderMultiBeskatningReglerAar()">
+        <h3 class = "period-header">{{period.year}}</h3>
+
+        <div *ngIf = "period.same || period.periods.length === 1 else multi" [innerHTML] = "printDifferentiated(period.periods[0].over183)"></div>
+
+        <ng-template #multi>
+
+          <div *ngFor = "let insideYear of period.periods">
+              <h4>{{txtCalender.printPeriod(insideYear.period.from, insideYear.period.to)}}</h4>
+              <div [innerHTML] = "printDifferentiated(insideYear.over183)" class = "period-tax"></div>
+          </div>
+          
+        </ng-template>
+
+      </div>
+    </ng-template>
 </div>
 
 

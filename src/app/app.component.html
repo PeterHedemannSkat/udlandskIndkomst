@@ -1,6 +1,7 @@
 <div class = "main-content">
  
-  <app-progress-bar></app-progress-bar>
+
+  <app-breadcrum [test] = "getRouteNameId()"></app-breadcrum>
 
   <div class = "well router-outlet">
       <h2>{{_txt.get(getRouteNameId())}}</h2>

@@ -34,6 +34,7 @@ export class ChosenComponent implements AfterViewInit {
 
   ngAfterViewInit() {
 
+
     const jqueryEle =  $('#' + this.idDom);
 
     jqueryEle.val(this.model);

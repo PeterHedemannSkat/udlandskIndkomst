@@ -25,6 +25,26 @@ export const urlMapper: UrlRessources[] = [
     {
         local: 'skatteTyperConclusion',
         skatdk: '0'
+    },
+    {
+        local: 'labelTxt',
+        skatdk: '0'
+    },
+    {
+        local: 'incomeTypes',
+        skatdk: '0'
+    },
+    {
+        local: 'employeeOrigin',
+        skatdk: '0'
+    },
+    {
+        local: 'offentligPrivat',
+        skatdk: '0'
+    },
+    {
+        local: 'saerligeOmstaendigheder',
+        skatdk: '0'
     }
 
 

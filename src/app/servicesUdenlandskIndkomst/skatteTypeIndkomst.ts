@@ -35,15 +35,13 @@ export class SkatteForholdIndkomstService {
                 pos = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(true))),
                 neg = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(false)));
 
-            return pos;
+            return {truthly183Rule: pos, falsy183Rule: neg};
 
         } else {
 
             throw new Error('data er ikke hentet!');
 
-
         }
-
     }
 
     private translateToBeskatningstype(data: any) {

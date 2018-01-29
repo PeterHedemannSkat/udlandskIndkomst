@@ -4,6 +4,7 @@ import {
 } from '@angular/core';
 import { countries } from '../../dataSkatUdlandsModul/countries.data';
 import { StateService } from '../../state/stateContainer';
+import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
 
 @Component({
   selector: 'app-landvalg',
@@ -17,7 +18,8 @@ export class LandvalgComponent implements OnInit {
   test = "";
 
   constructor(
-    public state: StateService
+    public state: StateService,
+    public text: TxtSharedService
   ) {}
 
   ngOnInit() {

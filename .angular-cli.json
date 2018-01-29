@@ -22,12 +22,10 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "assets/skat.min.css",
         "../node_modules/chosen-js/chosen.min.css",
         "assets/yetAnother.css"
       ],
       "scripts": [
-        "assets/jquery.min.js",
         "../node_modules/chosen-js/chosen.jquery.js",
         "assets/calender.js"
       ],

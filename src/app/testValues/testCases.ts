@@ -19,20 +19,30 @@ export class TestService {
     setState() {
 
         if (!environment.production) {
+            /**
+             * Flere perioder:
+             * fastkontor = false
+             * udlejet = false
+             * vilAnvende33A = true
+             * kompleks = [true, false, true]
+             * vilAnvende33A = true
+             * 
+             * 
+             */
 
             const
                 from = new Date(2018, 2, 10),
                 to = new Date(2019, 9, 9),
                 type = 'loon',
-                arbejdsgiverOrigin = 'DK', // workCountry, other
-                privatOffentlig = 'privat',
-                land = 'Sverige', // Storbritannien Australien
-                fastKontor = true,
-                startrout = 'opholdOver183dage', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
+                arbejdsgiverOrigin = 'DK', // workCountry, other, DK
+                privatOffentlig = 'privat', // privat offentlig
+                land = 'Storbritannien', // Storbritannien Australien
+                fastKontor = false,
+                startrout = 'intro', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
                 udlejet = false,
                 vilAnvende33A = true,
                 kompleks183dage = [true, false, true],
-                simple183dage = true;
+                simple183dage = false;
 
             this.state.mainState.type = type;
             this.periode.from = from;
@@ -50,14 +60,15 @@ export class TestService {
              * OBS kræver at periods fra og til er sat + land
              */
 
-             /*
+
 
             this.taxPerioder.periods = this.taxPerioder.getPeriods();
             this.taxPerioder.periods.forEach((el, i) => {
                 el.userAbove_183 = kompleks183dage[i];
             });
+            this.taxPerioder.over183dageNormalCase = simple183dage;
 
-            */
+
 
             this.router.navigateByUrl(startrout);
 
