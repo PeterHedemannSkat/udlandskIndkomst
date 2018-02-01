@@ -1,7 +1,6 @@
 <div class = "main-content">
- 
 
-  <app-breadcrum [test] = "getRouteNameId()"></app-breadcrum>
+  <app-breadcrum [test] = "_txt.get('some')" [some] = "getRouteNameId()"></app-breadcrum>
 
   <div class = "well router-outlet">
       <h2>{{_txt.get(getRouteNameId())}}</h2>

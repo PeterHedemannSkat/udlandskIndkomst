@@ -9,6 +9,7 @@ import { Keylist } from './chosen/keylist';
 import { RoutingService } from './routing/routingLogic';
 import { Router } from '@angular/router';
 import { TestService } from './testValues/testCases';
+import { StateService } from './state/stateContainer';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class AppComponent implements OnInit {
   constructor (
     public _txt: TxtSharedService,
     private route: Router,
-    private test: TestService
+    private test: TestService,
+    public state: StateService
 
   ) {}
 
@@ -32,7 +34,7 @@ export class AppComponent implements OnInit {
   }
 
   getRouteNameId() {
-    return this.route.url.substr(1);
+    return this.state.mainState.type;
   }
 
   testing() {

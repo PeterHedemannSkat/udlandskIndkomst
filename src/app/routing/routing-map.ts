@@ -9,6 +9,8 @@ import { DiverseComponent } from "../components/diverse/diverse.component";
 import { Betingelser33AComponent } from '../components/betingelser33-a/betingelser33-a.component';
 import { OpholdiLandOver183dageComponent } from "../components/opholdi-land-over183dage/opholdi-land-over183dage.component";
 import { IndkomstSkatteForholdComponent } from "../components/indkomst-skatte-forhold/indkomst-skatte-forhold.component";
+import { AktieindkomstComponent } from "../components/aktieindkomst/aktieindkomst.component";
+import { SimpleConclusionComponent } from '../components/simple-conclusion/simple-conclusion.component';
 
 export const routes: Routes = [{
     path: '',
@@ -50,6 +52,14 @@ export const routes: Routes = [{
   {
     path: 'indkomstSkatteForhold',
     component: IndkomstSkatteForholdComponent
+  },
+  {
+    path: 'aktieindkomst',
+    component: AktieindkomstComponent
+  },
+  {
+    path: 'simpleConclusion',
+    component: SimpleConclusionComponent
   }
 
 

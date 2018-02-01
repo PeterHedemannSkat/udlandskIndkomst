@@ -1,0 +1,1237 @@
+export const rente = [
+    {
+      'land': "AF",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AL",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "DZ",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AD",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AO",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AI",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AQ",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AG",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AR",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AM",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AW",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AC",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AZ",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "AU",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "BS",
+      "ind": 298,
+      "skat": 588
+    },
+    {
+      "land": "BH",
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BB',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BJ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BG',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'BF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CL',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CX',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CU',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CY',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'DJ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'DM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'DO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'EC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'EG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ER',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'EE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ET',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FJ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FI',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'AE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FO',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'GA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GE',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'GH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GL',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'GP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GU',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GQ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'BY',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'IN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ID',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IQ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IE',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'IS',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'IM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IL',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'IT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'JM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'JP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'JE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'JO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'YU',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'CV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KG',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'KI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'XK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KW',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'LA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LB',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LU',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'MO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MK',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'MW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ML',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MT',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'MP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MQ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MU',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'YT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MX',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'FM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ME',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'MS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'MM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NL',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'AN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NU',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'NO',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'NC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'OM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PL',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'QA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'RE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'RO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'RU',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'RW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'EH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SB',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'WS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'AS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ST',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CH',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'SN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'RS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SL',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SK',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'SI',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ES',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'LC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'PM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'GB',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'SD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SJ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SE',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'SZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ZA',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'GS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'KR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SS',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'SY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TJ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TD',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TH',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'CZ',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'TG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TK',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TO',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TT',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TC',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TV',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'TR',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'DE',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'UG',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'UA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'HU',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'UY',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'US',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'UM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'UZ',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VU',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VA',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'VN',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'WF',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'YE',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ZM',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'ZW',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'AT',
+      'ind': 298,
+      'skat': 0
+    },
+    {
+      'land': 'TP',
+      'ind': 298,
+      'skat': 588
+    },
+    {
+      'land': 'AX',
+      'ind': 298,
+      'skat': 588
+    }
+  ];

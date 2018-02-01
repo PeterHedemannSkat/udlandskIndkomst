@@ -1,0 +1,10 @@
+<app-ja-nej 
+  [(value)]   = "state.aktier.noterede"
+  [label]     = "text.get('labelBoersNoteredeAktier')" 
+></app-ja-nej>
+
+<app-radio-button 
+  [options] = "print.transformToOptions('aktietype')"
+  label     = "Er der tale om udbytte eller aktiegevinst?"
+  [(value)] = "state.aktier.type" 
+></app-radio-button>

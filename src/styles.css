@@ -120,3 +120,18 @@ app-chosen .chosen-container-single .chosen-single {
     padding: 0 1em;
 }
 
+.test-area {
+    background-color: coral;
+    height: 30em;
+}
+
+button.btn.btn-primary:active, button.btn.btn-primary:focus  {
+
+    background-color:#5a8d18;
+}
+
+.btn.skts-btn-secondary:focus, .btn.skts-btn-secondary:active {
+
+    background-color: transparent;
+    color: #333;;
+}

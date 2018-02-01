@@ -22,7 +22,7 @@ export class CommonUdlandsService {
     getCountryGroup() {
 
         const countryProp = this.getCountryPropertries();
-        return countryProp.group;
+        return countryProp ? countryProp.group : -1;
 
     }
 

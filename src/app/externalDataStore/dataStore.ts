@@ -11,6 +11,8 @@ import { incomeTypes } from './texts/selects/incomeTypes';
 import { employeeOrigin } from './texts/selects/arbejdsgiverLand';
 import { offentligPrivat } from './texts/selects/offentligprivat';
 import { saerligeOmstaendigheder } from './texts/selects/saerligeomstaendinger';
+import { aktietype } from './texts/selects/aktietype';
+import { rente } from './rente';
 
 
 export class ExternalData implements InMemoryWebApiModule {
@@ -27,7 +29,9 @@ export class ExternalData implements InMemoryWebApiModule {
                 incomeTypes,
                 employeeOrigin,
                 offentligPrivat,
-                saerligeOmstaendigheder
+                saerligeOmstaendigheder,
+                aktietype,
+                rente
             };
         }
     }

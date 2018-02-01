@@ -20,6 +20,7 @@ export class RoutingService {
 
     allSteps() {
 
+
       const
         type = this.state.mainState.type,
         brutto = stepMapper.find(el => el.type === type).steps,

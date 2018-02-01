@@ -34,6 +34,14 @@ export const overskrifter = [
     {
         id: 'indkomstSkatteForhold',
         da: 'Skatteforhold - resultat'
+    },
+    {
+        id: 'aktieindkomst',
+        da: 'Aktietyper'
+    },
+    {
+        id: 'simpleConclusion',
+        da: 'Resultat'
     }
 ];
 

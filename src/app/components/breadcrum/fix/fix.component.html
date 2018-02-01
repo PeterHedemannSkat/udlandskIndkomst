@@ -1,0 +1,3 @@
+<ul class = "skts-navbar-wizard">
+    <li *ngFor="let step of renderBreadCrum" [class.active] = "currentRoute(step.id)"><span>{{step.name}}</span></li>
+  </ul>

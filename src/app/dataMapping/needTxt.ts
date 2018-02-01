@@ -8,6 +8,7 @@ export const neededTxt = [
     'incomeTypes',
     'employeeOrigin',
     'offentligPrivat',
-    'saerligeOmstaendigheder'
+    'saerligeOmstaendigheder',
+    'aktietype'
 
 ];

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
+
 
 @Component({
   selector: 'app-intro',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public text: TxtSharedService
+  ) { }
 
   ngOnInit() {
   }

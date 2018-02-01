@@ -21,6 +21,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/skat.min.css",
         "styles.css",
         "../node_modules/chosen-js/chosen.min.css",
         "assets/yetAnother.css"

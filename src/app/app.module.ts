@@ -48,6 +48,11 @@ import { TestService } from './testValues/testCases';
 import { IndkomstSkatteForholdComponent } from './components/indkomst-skatte-forhold/indkomst-skatte-forhold.component';
 import { SkatteForholdIndkomstService } from './servicesUdenlandskIndkomst/skatteTypeIndkomst';
 import { BreadcrumComponent } from './components/breadcrum/breadcrum.component';
+import { AktieindkomstComponent } from './components/aktieindkomst/aktieindkomst.component';
+import { SimpleConclusionComponent } from './components/simple-conclusion/simple-conclusion.component';
+import { FixComponent } from './components/breadcrum/fix/fix.component';
+import { AktieSkatteTypeService } from './servicesUdenlandskIndkomst/aktierSkattetype';
+import { KapitalIndkomstSkatteTypeService } from './servicesUdenlandskIndkomst/kapitalIndkomstSkatteType';
 
 
 
@@ -73,7 +78,10 @@ import { BreadcrumComponent } from './components/breadcrum/breadcrum.component';
     Betingelser33AComponent,
     OpholdiLandOver183dageComponent,
     IndkomstSkatteForholdComponent,
-    BreadcrumComponent
+    BreadcrumComponent,
+    AktieindkomstComponent,
+    SimpleConclusionComponent,
+    FixComponent
 
 
   ],
@@ -96,7 +104,9 @@ import { BreadcrumComponent } from './components/breadcrum/breadcrum.component';
     CommonUdlandsService,
     PrintService,
     TestService,
-    SkatteForholdIndkomstService
+    SkatteForholdIndkomstService,
+    AktieSkatteTypeService,
+    KapitalIndkomstSkatteTypeService
 
   ],
   bootstrap: [AppComponent]

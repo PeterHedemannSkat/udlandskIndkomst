@@ -6,6 +6,7 @@ import { Diverse } from './simpleStateClasses/diverse';
 import { MainStates } from './simpleStateClasses/mainStateClass';
 import { Eligible33A } from './simpleStateClasses/betingelser33AClass';
 import { Pension } from './simpleStateClasses/pensionClass';
+import { Aktier } from './simpleStateClasses/aktierClass';
 
 @Injectable()
 export class StateService {
@@ -15,6 +16,7 @@ export class StateService {
     mainState           = new MainStates();     // Land
     betingelser33A      = new Eligible33A();    // 33A bliver ikke brugt
     Pension             = new Pension();
+    aktier              = new Aktier();
 
 
 }

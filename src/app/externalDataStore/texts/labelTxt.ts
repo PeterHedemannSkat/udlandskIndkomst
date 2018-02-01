@@ -66,5 +66,9 @@ export const labelTxt = [
     {
         id: 'label183DageNormal_expanded',
         da: 'Forklaring her ...'
+    },
+    {
+        id: 'labelBoersNoteredeAktier',
+        da: 'Er aktierne (børs)noterede?'
     }
 ];

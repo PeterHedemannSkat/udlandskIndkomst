@@ -1,10 +1,8 @@
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { RoutingService } from '../../routing/routingLogic';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
-import { OnChanges } from '@angular/core/src/metadata/lifecycle_hooks';
-
-
-
+import { OnChanges, AfterViewChecked } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Element } from '@angular/compiler';
 
 
 @Component({
@@ -17,6 +15,11 @@ export class BreadcrumComponent implements OnInit, OnChanges {
   @Input()
   test: any;
 
+  @Input()
+  some: any;
+
+  widthTest: any;
+
   constructor(
     public routingService: RoutingService,
     public text: TxtSharedService,
@@ -27,11 +30,16 @@ export class BreadcrumComponent implements OnInit, OnChanges {
 
   }
 
+  setWidth(event: any) {
+    this.widthTest = event;
+  }
+
+
   ngOnChanges() {
 
     setTimeout(el => {
 
-      window.scroll(0, 0);
+    this.widthTest = this.horizontalPxLength();
 
       const
         scrollElement = this.element.nativeElement.querySelector('div.horizontal-test'),
@@ -40,7 +48,8 @@ export class BreadcrumComponent implements OnInit, OnChanges {
         inviewto = scroll + widthOuter,
         inviewCenter = scroll + widthOuter / 2,
         nodelist: NodeList = this.element.nativeElement.querySelectorAll('li'),
-        len = nodelist.length;
+        len = nodelist.length,
+        pxFromViewPoint = scrollElement.scrollIntoView();
 
       let width = 0;
 
@@ -60,10 +69,10 @@ export class BreadcrumComponent implements OnInit, OnChanges {
 
               if ((width + lock) > inviewto && dynScroll < width) {
                 dynScroll += 10;
-                scrollElement.scroll(dynScroll, 0);
+                scrollElement.scrollLeft = dynScroll;
               } else if (width < scroll && dynScroll > width) {
                 dynScroll -= 10;
-                scrollElement.scroll(dynScroll, 0);
+                scrollElement.scrollLeft = dynScroll;
               } else {
                 clearInterval(a);
               }
@@ -82,13 +91,14 @@ export class BreadcrumComponent implements OnInit, OnChanges {
     }, 1);
 
 
-
   }
 
   horizontalPxLength() {
+
     const
       nodelist: NodeList = this.element.nativeElement.querySelectorAll('li'),
       len = nodelist.length;
+
 
     let width = 0;
 
