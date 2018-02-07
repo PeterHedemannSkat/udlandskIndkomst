@@ -33,16 +33,17 @@ export class TestService {
             const
                 from = new Date(2018, 2, 10),
                 to = new Date(2019, 9, 9),
-                type = 'loon',
+                type = 'pension',
                 arbejdsgiverOrigin = 'DK', // workCountry, other, DK
                 privatOffentlig = 'privat', // privat offentlig
-                land = 'Storbritannien', // Storbritannien Australien
+                land = 'Italien', // Storbritannien Australien
                 fastKontor = false,
-                startrout = 'intro', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
+                startrout = 'land', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
                 udlejet = false,
                 vilAnvende33A = true,
                 kompleks183dage = [true, false, true],
-                simple183dage = false;
+                simple183dage = false,
+                pension = 'off';
 
             this.state.mainState.type = type;
             this.periode.from = from;
@@ -53,6 +54,7 @@ export class TestService {
             this.state.arbejdsgiverForhold.fixedOfficeInCountry = fastKontor;
             this.state.diverse.arbejdsudlejet = udlejet;
             this.state.betingelser33A.vilAnvende33A = vilAnvende33A;
+            this.state.pension.type = pension;
 
             /**
              * skal kaldes hvis vi starter på en sent trin

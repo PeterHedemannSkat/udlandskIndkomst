@@ -9,6 +9,8 @@ export const neededTxt = [
     'employeeOrigin',
     'offentligPrivat',
     'saerligeOmstaendigheder',
-    'aktietype'
+    'aktietype',
+    'pensionstxt',
+    'pensionsType'
 
 ];

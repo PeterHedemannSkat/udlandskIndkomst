@@ -70,5 +70,9 @@ export const labelTxt = [
     {
         id: 'labelBoersNoteredeAktier',
         da: 'Er aktierne (børs)noterede?'
+    },
+    {
+        id: 'pensionsType',
+        da: 'Pensionstype'
     }
 ];

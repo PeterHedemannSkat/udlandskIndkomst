@@ -48,11 +48,31 @@ export const urlMapper: UrlRessources[] = [
     },
     {
         local: 'aktietype',
-        skatdk: '0'
+        skatdk: '6226'
     },
     {
         local: 'app/rente',
         skatdk: 'rente.json'
+    },
+    {
+        local: 'pensionstxt',
+        skatdk: '0'
+    },
+    {
+        local: 'pensionsType',
+        skatdk: '0'
+    },
+    {
+        local: 'app/privatPension',
+        skatdk: 'privatPension.json'
+    },
+    {
+        local: 'app/socialPension',
+        skatdk: 'socialPension.json'
+    },
+    {
+        local: 'app/offentligPension',
+        skatdk: 'offentligPension.json'
     }
 
 

@@ -11,6 +11,10 @@ import { OpholdiLandOver183dageComponent } from "../components/opholdi-land-over
 import { IndkomstSkatteForholdComponent } from "../components/indkomst-skatte-forhold/indkomst-skatte-forhold.component";
 import { AktieindkomstComponent } from "../components/aktieindkomst/aktieindkomst.component";
 import { SimpleConclusionComponent } from '../components/simple-conclusion/simple-conclusion.component';
+import { OneConclusionComponent } from "../components/one-conclusion/one-conclusion.component";
+import { IntOrgIndkomstTypeComponent } from '../components/int-org-indkomst-type/int-org-indkomst-type.component';
+import { PensionTypeComponent } from "../components/pension-type/pension-type.component";
+import { PensionComplexComponent } from '../components/pension-complex/pension-complex.component';
 
 export const routes: Routes = [{
     path: '',
@@ -60,6 +64,22 @@ export const routes: Routes = [{
   {
     path: 'simpleConclusion',
     component: SimpleConclusionComponent
+  },
+  {
+    path: 'simplicity',
+    component: OneConclusionComponent
+  },
+  {
+    path: 'incometype',
+    component: IntOrgIndkomstTypeComponent
+  },
+  {
+    path: 'pensionType',
+    component: PensionTypeComponent
+  },
+  {
+    path: 'PensionComplex',
+    component: PensionComplexComponent
   }
 
 

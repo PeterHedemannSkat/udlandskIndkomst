@@ -42,6 +42,22 @@ export const overskrifter = [
     {
         id: 'simpleConclusion',
         da: 'Resultat'
+    },
+    {
+        id: 'simplicity',
+        da: 'Sådan beskattes du'
+    },
+    {
+        id: 'incometype',
+        da: 'Indkomsttype'
+    },
+    {
+        id: 'pensionType',
+        da: 'Pensionstype'
+    },
+    {
+        id: 'PensionComplex',
+        da: 'Særlige pensionsforhold'
     }
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input, OnDestroy } from '@angular/core';
 import * as _ from 'lodash';
 import { JaNejTxtLanguage } from './janejTxtLanguage';
 
@@ -12,7 +12,7 @@ interface RadiobuttonUX {
   templateUrl: './ja-nej.component.html',
   styleUrls: ['./ja-nej.component.css']
 })
-export class JaNejComponent implements OnInit {
+export class JaNejComponent implements OnInit, OnDestroy {
 
     toggleHelpTxt = true;
 
@@ -56,6 +56,10 @@ export class JaNejComponent implements OnInit {
     ngOnInit() {
 
         this.name = `_name_${_.random(1, 9999999999999)}`;
+    }
+
+    ngOnDestroy() {
+        // this.valueChange.emit(null);
     }
 
 

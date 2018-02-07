@@ -5,6 +5,8 @@ import { PeriodState } from '../state/periodClass';
 import { stepMapper } from './step-mapper';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CommonUdlandsService } from '../servicesUdenlandskIndkomst/commonServices';
+import { grupper } from '../dataSkatUdlandsModul/pension/landegrupper';
+import { PensionsSkatteTypeService } from '../servicesUdenlandskIndkomst/pensionsSkattetype';
 
 @Injectable()
 export class RoutingService {
@@ -14,7 +16,8 @@ export class RoutingService {
         public state: StateService,
         public period: PeriodState,
         private route: Router,
-        private commons: CommonUdlandsService
+        private commons: CommonUdlandsService,
+        private pension: PensionsSkatteTypeService
 
     ) {}
 
@@ -25,7 +28,6 @@ export class RoutingService {
         type = this.state.mainState.type,
         brutto = stepMapper.find(el => el.type === type).steps,
         copy = brutto.slice(0);
-
 
       if (type === 'loon') {
 
@@ -38,6 +40,20 @@ export class RoutingService {
 
         if (!this.period.moreThan6Month()) {
             this.deleteElement(copy, ['opholdOver183dage', 'betingelse33A']);
+        }
+
+      }
+
+      if (type === 'pension') {
+
+        const isAnExceptionPensionCountry = grupper.find(el => {
+            return el.lande.indexOf(this.state.mainState.land) > -1;
+        });
+
+        const newExceo = this.pension.isRegular();
+
+        if (newExceo) {
+            this.deleteElement(copy, ['PensionComplex']);
         }
 
       }

@@ -53,6 +53,11 @@ import { SimpleConclusionComponent } from './components/simple-conclusion/simple
 import { FixComponent } from './components/breadcrum/fix/fix.component';
 import { AktieSkatteTypeService } from './servicesUdenlandskIndkomst/aktierSkattetype';
 import { KapitalIndkomstSkatteTypeService } from './servicesUdenlandskIndkomst/kapitalIndkomstSkatteType';
+import { OneConclusionComponent } from './components/one-conclusion/one-conclusion.component';
+import { IntOrgIndkomstTypeComponent } from './components/int-org-indkomst-type/int-org-indkomst-type.component';
+import { PensionTypeComponent } from './components/pension-type/pension-type.component';
+import { PensionComplexComponent } from './components/pension-complex/pension-complex.component';
+import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensionsSkattetype';
 
 
 
@@ -81,7 +86,11 @@ import { KapitalIndkomstSkatteTypeService } from './servicesUdenlandskIndkomst/k
     BreadcrumComponent,
     AktieindkomstComponent,
     SimpleConclusionComponent,
-    FixComponent
+    FixComponent,
+    OneConclusionComponent,
+    IntOrgIndkomstTypeComponent,
+    PensionTypeComponent,
+    PensionComplexComponent
 
 
   ],
@@ -90,7 +99,7 @@ import { KapitalIndkomstSkatteTypeService } from './servicesUdenlandskIndkomst/k
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes, {useHash: true})
-    //, InMemoryWebApiModule.forRoot( ExternalData )
+    , InMemoryWebApiModule.forRoot( ExternalData )
   ],
   providers: [
     Texts,
@@ -106,7 +115,8 @@ import { KapitalIndkomstSkatteTypeService } from './servicesUdenlandskIndkomst/k
     TestService,
     SkatteForholdIndkomstService,
     AktieSkatteTypeService,
-    KapitalIndkomstSkatteTypeService
+    KapitalIndkomstSkatteTypeService,
+    PensionsSkatteTypeService
 
   ],
   bootstrap: [AppComponent]

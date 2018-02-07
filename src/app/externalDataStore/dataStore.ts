@@ -13,6 +13,12 @@ import { offentligPrivat } from './texts/selects/offentligprivat';
 import { saerligeOmstaendigheder } from './texts/selects/saerligeomstaendinger';
 import { aktietype } from './texts/selects/aktietype';
 import { rente } from './rente';
+import { intOrgIncomeTypes } from './texts/selects/intOrgIncomeType';
+import { pensionstxt } from './texts/pensionSaerligTxt';
+import { pensionsType } from './texts/selects/pensionType';
+import { privatPension } from './privatPension';
+import { offentligPension } from './offPension';
+import { socialPension } from './socialPension';
 
 
 export class ExternalData implements InMemoryWebApiModule {
@@ -31,7 +37,13 @@ export class ExternalData implements InMemoryWebApiModule {
                 offentligPrivat,
                 saerligeOmstaendigheder,
                 aktietype,
-                rente
+                rente,
+                intOrgIncomeTypes,
+                pensionstxt,
+                pensionsType,
+                privatPension,
+                offentligPension,
+                socialPension
             };
         }
     }

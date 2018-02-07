@@ -10,6 +10,18 @@ export const stepMapper = [
     {
         type: 'capitalIncome',
         steps: ['intro', 'type', 'land', 'simpleConclusion']
+    },
+    {
+        type: 'firmIncome',
+        steps: ['intro', 'type', 'simplicity']
+    },
+    {
+        type: 'intOrg',
+        steps: ['intro', 'type', 'incometype', 'simpleConclusion']
+    },
+    {
+        type: 'pension',
+        steps: ['intro', 'type',  'land', 'pensionType', 'PensionComplex', 'simpleConclusion']
     }
 ];
 

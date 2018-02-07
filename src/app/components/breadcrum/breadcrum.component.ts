@@ -18,6 +18,12 @@ export class BreadcrumComponent implements OnInit, OnChanges {
   @Input()
   some: any;
 
+  @Input()
+  changeRoute: any;
+
+  @Input()
+  pseodoPension: any;
+
   widthTest: any;
 
   constructor(

@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy } from '@angular/core';
 import * as _ from 'lodash';
 
 export interface RadiobuttonUX {
@@ -50,7 +50,7 @@ export interface RadiobuttonUX {
     `
 })
 
-export class RadioButtonListComponent implements OnInit {
+export class RadioButtonListComponent implements OnInit, OnDestroy {
 
     toggleHelpTxt = true;
 
@@ -95,6 +95,10 @@ export class RadioButtonListComponent implements OnInit {
 
     showHelper () {
         return (this.helpTxt && this.helpTxt.length > 2);
+    }
+
+    ngOnDestroy() {
+        // this.valueChange.emit(null);
     }
 
 

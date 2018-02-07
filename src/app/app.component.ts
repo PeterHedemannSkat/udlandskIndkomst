@@ -33,8 +33,16 @@ export class AppComponent implements OnInit {
 
   }
 
+  changeRoute() {
+    return this.route.url;
+  }
+
   getRouteNameId() {
-    return this.state.mainState.type;
+    return this.state.mainState.land;
+  }
+
+  pseodoPension() {
+    return this.state.pension.type;
   }
 
   testing() {
