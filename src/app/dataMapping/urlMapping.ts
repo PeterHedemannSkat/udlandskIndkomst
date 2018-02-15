@@ -56,11 +56,11 @@ export const urlMapper: UrlRessources[] = [
     },
     {
         local: 'pensionstxt',
-        skatdk: '0'
+        skatdk: '10383'
     },
     {
         local: 'pensionsType',
-        skatdk: '0'
+        skatdk: '10324'
     },
     {
         local: 'app/privatPension',
@@ -76,16 +76,16 @@ export const urlMapper: UrlRessources[] = [
     },
     {
         local: 'app/InternationalOrg',
-        skatdk: 'InternationalOrg.json'
+        skatdk: 'internationalOrg.json'
     },
     {
         local: 'incomeTypesIntOrg',
-        skatdk: '0'
+        skatdk: '10314'
     },
     {
         local: 'app/countries',
         skatdk: 'countries.json'
-    },
+    }
 
 
 ];
