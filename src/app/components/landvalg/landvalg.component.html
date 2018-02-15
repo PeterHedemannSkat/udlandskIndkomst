@@ -1,5 +1,7 @@
 <app-chosen 
     [(model)] = "state.mainState.land"
     [label] = "text.get('vaelgLand')"
-    [options] = "countries">
+    [options] = "newCountryState | async">
 </app-chosen>
+
+

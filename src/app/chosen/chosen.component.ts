@@ -1,15 +1,23 @@
-import { Component, OnInit, Input, AfterViewInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, AfterViewInit, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import * as _ from 'lodash';
 import { Keylist } from './keylist';
+import { OnChanges, SimpleChanges } from '@angular/core/src/metadata/lifecycle_hooks';
+
+
 
 
 declare var $: any;
 
 @Component({
   selector: 'app-chosen',
-  templateUrl: './chosen.component.html'
+  templateUrl: './chosen.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ChosenComponent implements AfterViewInit {
+export class ChosenComponent implements AfterViewInit, OnChanges {
+
+  isDynamicalupdated: boolean;
+
+  loaded = 0;
 
   public value: string;
 
@@ -30,7 +38,47 @@ export class ChosenComponent implements AfterViewInit {
 
   public idDom = `id_${_.uniqueId('name')}`;
 
-  constructor() { }
+  constructor() {}
+
+  ngOnChanges(changes: SimpleChanges ) {
+
+    const options = changes['options'];
+
+    console.log(options);
+
+    if (options && options.currentValue) {
+
+      if (!options.previousValue && options.currentValue) {
+
+        setTimeout(() => {
+          console.log('***')
+          $('#' + this.idDom).trigger("chosen:updated");
+        }, 0);
+
+      } else {
+        for (let i = 0; i < options.currentValue.length; i++) {
+
+          if (options.previousValue !== undefined && ((!options.previousValue[i]) || (options.currentValue[i].id !== options.previousValue[i].id))) {
+
+            setTimeout(() => {
+              $('#' + this.idDom).trigger("chosen:updated");
+            }, 0);
+
+            break;
+          }
+        }
+
+      }
+
+
+
+    }
+
+
+  }
+
+    //
+
 
   ngAfterViewInit() {
 

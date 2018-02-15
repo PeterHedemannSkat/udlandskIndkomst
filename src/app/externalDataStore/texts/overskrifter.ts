@@ -58,6 +58,14 @@ export const overskrifter = [
     {
         id: 'PensionComplex',
         da: 'Særlige pensionsforhold'
+    },
+    {
+        id: 'InternationalOrg',
+        da: 'Int. organisation'
+    },
+    {
+        id: 'InternationalOrgType',
+        da: 'Indkomsttype fra org.'
     }
 ];
 

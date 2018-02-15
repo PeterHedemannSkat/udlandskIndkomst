@@ -74,5 +74,13 @@ export const labelTxt = [
     {
         id: 'pensionsType',
         da: 'Pensionstype'
+    },
+    {
+        id: 'intOrganization',
+        da: 'Vælg organisation'
+    },
+    {
+        id: 'labelOrgIncomeType',
+        da: 'Vælg indkomsttype'
     }
 ];

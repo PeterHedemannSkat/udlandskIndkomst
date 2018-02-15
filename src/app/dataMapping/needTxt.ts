@@ -11,6 +11,7 @@ export const neededTxt = [
     'saerligeOmstaendigheder',
     'aktietype',
     'pensionstxt',
-    'pensionsType'
+    'pensionsType',
+    'incomeTypesIntOrg'
 
 ];

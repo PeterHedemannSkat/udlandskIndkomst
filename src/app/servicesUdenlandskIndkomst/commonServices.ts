@@ -3,13 +3,18 @@ import { countries } from '../dataSkatUdlandsModul/countries.data';
 import { StateService } from '../state/stateContainer';
 import { TxtSharedService } from '../TxtSharedService/txtSharedService';
 import { error } from 'selenium-webdriver';
+import { UrlRessourceService } from '../urlRessource/urlressource';
 
 @Injectable()
 export class CommonUdlandsService {
 
-    constructor (
+    get countriesExternal(): {land, id, group}[] {
+        return this.ressource.getData('app/countries');
+      }
 
-        private state: StateService
+    constructor (
+        private state: StateService,
+        private ressource: UrlRessourceService
     ) {}
 
     getCountryNameReg() {
@@ -28,20 +33,25 @@ export class CommonUdlandsService {
 
     getCountryID(countryName: string) {
 
-        const countryProp = countries.find(el => el.land === countryName);
+        if (this.countriesExternal) {
+            const countryProp = this.countriesExternal.find(el => el.land === countryName);
 
-        if (countryProp) {
-            return countryProp.id;
-        } else {
-            throw new Error('Fandt ikke land');
+            if (countryProp) {
+                return countryProp.id;
+            } else {
+                return '';
+            }
         }
-
     }
 
 
 
     private getCountryPropertries () {
-        return countries.find(countryObj => countryObj.id === this.state.mainState.land);
+
+        if (this.countriesExternal) {
+            return this.countriesExternal.find(countryObj => countryObj.id === this.state.mainState.land);
+        }
+
     }
 
 }

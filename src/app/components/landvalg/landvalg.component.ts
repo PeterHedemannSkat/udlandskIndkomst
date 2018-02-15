@@ -2,9 +2,10 @@ import {
   Component,
   OnInit
 } from '@angular/core';
-import { countries } from '../../dataSkatUdlandsModul/countries.data';
 import { StateService } from '../../state/stateContainer';
 import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
+import { UrlRessourceService } from '../../urlRessource/urlressource';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-landvalg',
@@ -13,26 +14,26 @@ import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
 })
 export class LandvalgComponent implements OnInit {
 
-  landLabel = 'Fra hvilket land kommer indkomsten?';
-  countries: any[] = [];
-  test = "";
+
+  newCountryState = this.ressource.getData_('app/countries')
+    .map((el: {id, land}[])  => {
+      return el.map(el_ => {
+        return {
+          id: el_.id,
+          value: el_.land
+        };
+      });
+    });
+
 
   constructor(
     public state: StateService,
-    public text: TxtSharedService
+    public text: TxtSharedService,
+    private ressource: UrlRessourceService
   ) {}
 
   ngOnInit() {
-    this.setCountries();
-  }
 
-  setCountries() {
-    this.countries = countries.map(country => {
-      return {
-        id: country.id,
-        value: country.land
-      };
-    });
   }
 
 

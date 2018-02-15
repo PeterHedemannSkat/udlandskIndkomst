@@ -19,6 +19,9 @@ import { pensionsType } from './texts/selects/pensionType';
 import { privatPension } from './privatPension';
 import { offentligPension } from './offPension';
 import { socialPension } from './socialPension';
+import { InternationalOrg } from './internationalOrganization';
+import { incomeTypesIntOrg } from './texts/selects/incomeTypesIntOrg';
+import { countries } from './countries';
 
 
 export class ExternalData implements InMemoryWebApiModule {
@@ -43,7 +46,10 @@ export class ExternalData implements InMemoryWebApiModule {
                 pensionsType,
                 privatPension,
                 offentligPension,
-                socialPension
+                socialPension,
+                InternationalOrg,
+                incomeTypesIntOrg,
+                countries
             };
         }
     }

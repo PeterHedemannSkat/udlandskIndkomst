@@ -45,6 +45,8 @@ export class UrlRessourceService {
                 const cached = this.store.find(el_ => el_.id === id);
                 cached.data = el;
 
+                console.log(cached)
+
             });
 
             return null;
@@ -53,7 +55,7 @@ export class UrlRessourceService {
         return null;
     }
 
-    private getData_(id: string) {
+    public getData_(id: string) {
 
         const
             url_ = urlMapper.find(el => el.local === id),

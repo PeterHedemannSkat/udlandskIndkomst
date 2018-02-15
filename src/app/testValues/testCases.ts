@@ -38,14 +38,14 @@ export class TestService {
                 privatOffentlig = 'privat', // privat offentlig
                 land = 'Italien', // Storbritannien Australien
                 fastKontor = false,
-                startrout = 'land', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
+                startrout = 'intro', // 'intro', 'type', 'land', 'periode', 'arbejdsgiver', 'diverse', 'betingelse33A', 'opholdOver183dage'
                 udlejet = false,
                 vilAnvende33A = true,
                 kompleks183dage = [true, false, true],
                 simple183dage = false,
                 pension = 'off';
 
-            this.state.mainState.type = type;
+            //this.state.mainState.type = type;
             this.periode.from = from;
             this.periode.to = to;
             this.state.mainState.land = this.commons.getCountryID(land);

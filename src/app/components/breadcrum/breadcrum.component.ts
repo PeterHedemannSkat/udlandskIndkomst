@@ -24,6 +24,9 @@ export class BreadcrumComponent implements OnInit, OnChanges {
   @Input()
   pseodoPension: any;
 
+  @Input()
+  pseudoType: any;
+
   widthTest: any;
 
   constructor(

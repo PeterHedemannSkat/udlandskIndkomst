@@ -1,6 +1,12 @@
 <div class = "main-content">
 
-  <app-breadcrum [test] = "_txt.get('some')" [some] = "getRouteNameId()" [changeRoute] = "changeRoute()" [pseodoPension] = "pseodoPension()"></app-breadcrum>
+  <app-breadcrum 
+    [test] = "_txt.get('some')" 
+    [some] = "getRouteNameId()" 
+    [changeRoute] = "changeRoute()" 
+    [pseodoPension] = "pseodoPension()" 
+    [pseudoType] = "pseudoType()">
+  </app-breadcrum>
 
   <div class = "well router-outlet">
       <h2>{{_txt.get(getRouteNameId())}}</h2>

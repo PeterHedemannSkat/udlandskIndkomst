@@ -13,7 +13,7 @@ export const incomeTypes = [
       },
       {
         id: 'firmIncome',
-        da: 'Indkomst fra virksomed i landet'
+        da: 'Indkomst fra virksomhed i udlandet'
       },
       {
         id: 'intOrg',

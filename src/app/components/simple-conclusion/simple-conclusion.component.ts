@@ -5,6 +5,7 @@ import { AktieSkatteTypeService } from '../../servicesUdenlandskIndkomst/aktierS
 import { UrlRessourceService } from '../../urlRessource/urlressource';
 import { KapitalIndkomstSkatteTypeService } from '../../servicesUdenlandskIndkomst/kapitalIndkomstSkatteType';
 import { PensionsSkatteTypeService } from '../../servicesUdenlandskIndkomst/pensionsSkattetype';
+import { IntOrgService } from '../../servicesUdenlandskIndkomst/intOrg';
 
 @Component({
   selector: 'app-simple-conclusion',
@@ -18,7 +19,8 @@ export class SimpleConclusionComponent implements OnInit {
     public state: StateService,
     public aktier: AktieSkatteTypeService,
     private rente: KapitalIndkomstSkatteTypeService,
-    public pension: PensionsSkatteTypeService
+    public pension: PensionsSkatteTypeService,
+    public intOrg: IntOrgService
   ) { }
 
   ngOnInit() {
@@ -33,6 +35,8 @@ export class SimpleConclusionComponent implements OnInit {
         return this.aktier.stocks();
       case 'pension':
         return this.pension.getPensionsBeskatning();
+      case 'intOrg':
+        return this.intOrg.getResultType().toString();
 
     }
   }

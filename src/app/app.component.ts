@@ -45,6 +45,10 @@ export class AppComponent implements OnInit {
     return this.state.pension.type;
   }
 
+  pseudoType() {
+    return this.state.mainState.type;
+  }
+
   testing() {
     return 'A';
   }

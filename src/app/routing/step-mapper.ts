@@ -17,12 +17,17 @@ export const stepMapper = [
     },
     {
         type: 'intOrg',
-        steps: ['intro', 'type', 'incometype', 'simpleConclusion']
+        steps: ['intro', 'type', 'InternationalOrg', 'InternationalOrgType', 'simpleConclusion']
     },
     {
         type: 'pension',
         steps: ['intro', 'type',  'land', 'pensionType', 'PensionComplex', 'simpleConclusion']
+    },
+    {
+        type: undefined,
+        steps: ['intro', 'type', 'simpleConclusion']
     }
+
 ];
 
 

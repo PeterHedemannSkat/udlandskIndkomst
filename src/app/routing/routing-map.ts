@@ -15,6 +15,8 @@ import { OneConclusionComponent } from "../components/one-conclusion/one-conclus
 import { IntOrgIndkomstTypeComponent } from '../components/int-org-indkomst-type/int-org-indkomst-type.component';
 import { PensionTypeComponent } from "../components/pension-type/pension-type.component";
 import { PensionComplexComponent } from '../components/pension-complex/pension-complex.component';
+import { IntOrgComponent } from '../components/int-org/int-org.component';
+import { IntOrgIncomeTypeComponent } from '../components/int-org-income-type/int-org-income-type.component';
 
 export const routes: Routes = [{
     path: '',
@@ -80,7 +82,17 @@ export const routes: Routes = [{
   {
     path: 'PensionComplex',
     component: PensionComplexComponent
+  },
+  {
+    path: 'InternationalOrg',
+    component: IntOrgComponent
+  },
+  {
+    path: 'InternationalOrgType',
+    component: IntOrgIncomeTypeComponent
   }
+
+
 
 
 ];

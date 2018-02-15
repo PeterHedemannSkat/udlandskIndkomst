@@ -58,6 +58,9 @@ import { IntOrgIndkomstTypeComponent } from './components/int-org-indkomst-type/
 import { PensionTypeComponent } from './components/pension-type/pension-type.component';
 import { PensionComplexComponent } from './components/pension-complex/pension-complex.component';
 import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensionsSkattetype';
+import { IntOrgComponent } from './components/int-org/int-org.component';
+import { IntOrgIncomeTypeComponent } from './components/int-org-income-type/int-org-income-type.component';
+import { IntOrgService } from './servicesUdenlandskIndkomst/intOrg';
 
 
 
@@ -90,7 +93,9 @@ import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensions
     OneConclusionComponent,
     IntOrgIndkomstTypeComponent,
     PensionTypeComponent,
-    PensionComplexComponent
+    PensionComplexComponent,
+    IntOrgComponent,
+    IntOrgIncomeTypeComponent
 
 
   ],
@@ -99,7 +104,7 @@ import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensions
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes, {useHash: true})
-    , InMemoryWebApiModule.forRoot( ExternalData )
+    //, InMemoryWebApiModule.forRoot( ExternalData )
   ],
   providers: [
     Texts,
@@ -116,7 +121,8 @@ import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensions
     SkatteForholdIndkomstService,
     AktieSkatteTypeService,
     KapitalIndkomstSkatteTypeService,
-    PensionsSkatteTypeService
+    PensionsSkatteTypeService,
+    IntOrgService
 
   ],
   bootstrap: [AppComponent]

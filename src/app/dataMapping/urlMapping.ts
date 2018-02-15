@@ -73,7 +73,19 @@ export const urlMapper: UrlRessources[] = [
     {
         local: 'app/offentligPension',
         skatdk: 'offentligPension.json'
-    }
+    },
+    {
+        local: 'app/InternationalOrg',
+        skatdk: 'InternationalOrg.json'
+    },
+    {
+        local: 'incomeTypesIntOrg',
+        skatdk: '0'
+    },
+    {
+        local: 'app/countries',
+        skatdk: 'countries.json'
+    },
 
 
 ];
