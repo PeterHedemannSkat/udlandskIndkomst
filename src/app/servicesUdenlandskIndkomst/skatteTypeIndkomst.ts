@@ -46,7 +46,12 @@ export class SkatteForholdIndkomstService {
 
     private translateToBeskatningstype(data: any) {
 
-        return loonIndkomstType
+        /**
+         * data.afvis === 'X'
+         */
+        console.log(data);
+
+        return data.result.afvis === 'X' ? 13 : loonIndkomstType
             .find(el => {
                 return el.indkomst.indexOf(Number(data.result.indkomst)) > -1  && el.skat === data.result.skat;
             })
@@ -174,7 +179,11 @@ export class SkatteForholdIndkomstService {
             }
         ];
 
+        console.log(origin);
+
         const _obj = map.find(el => type === el.type && originMap === el.origin);
+
+        console.log(_obj);
 
         return _obj ? _obj.value : -1;
 

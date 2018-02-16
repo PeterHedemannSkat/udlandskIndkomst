@@ -5,7 +5,6 @@
 ></app-radio-button>
 
 <app-radio-button 
-  *ngIf     = "commons.getCountryGroup() !== 8"
   [options] = "getoptionsOrigin()"
   [label]   = "text.get('labelArbejdsGiverOprindelse')"
   [(value)] = "state.arbejdsgiverForhold.originOfFirm" 

@@ -34,7 +34,7 @@ export class TestService {
                 from = new Date(2018, 2, 10),
                 to = new Date(2019, 9, 9),
                 type = 'pension',
-                arbejdsgiverOrigin = 'DK', // workCountry, other, DK
+                arbejdsgiverOrigin = '', // workCountry, other, DK
                 privatOffentlig = 'privat', // privat offentlig
                 land = 'Italien', // Storbritannien Australien
                 fastKontor = false,

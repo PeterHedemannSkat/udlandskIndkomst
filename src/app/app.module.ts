@@ -104,7 +104,7 @@ import { IntOrgService } from './servicesUdenlandskIndkomst/intOrg';
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes, {useHash: true})
-    //, InMemoryWebApiModule.forRoot( ExternalData )
+    , InMemoryWebApiModule.forRoot( ExternalData )
   ],
   providers: [
     Texts,

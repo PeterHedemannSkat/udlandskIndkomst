@@ -14,5 +14,10 @@ export const skatteTyperConclusion = [
     {
         id: '4',
         da: '<b>1/2 excemption</b><p>Det betyder ...</p>'
-    }
+    },
+    {
+        id: '13',
+        da: '<b>Kunne ikke afgøres</b><p>Du bør ringe til kundecentret</p>'
+    },
 ];
+
