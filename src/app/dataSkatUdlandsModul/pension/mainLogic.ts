@@ -290,15 +290,59 @@ export const mainLogic = [
     'TxtId': 19
   },
   {
-    'LandId': 'US',
+    'LandId': 'BE',
     'LandGruppe': '',
     'Sub': '',
     'SpgIdIfMore': '',
     'SpgNr': 1,
     'Type': 'privat',
     'ShowIfSpg1EqualTo': '',
-    'TxtId': 20
-  }
+    'TxtId': 23
+  },
+  {
+    'LandId': 'BE',
+    'LandGruppe': '',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': '',
+    'TxtId': 97
+  },
+  {
+    'LandId': 'BE',
+    'LandGruppe': '',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 2,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 96
+
+  },
+  {
+    'LandId': 'US',
+    'LandGruppe': '',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 22
+
+  },
+  {
+    'LandId': 'US',
+    'LandGruppe': '',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 21
+
+  },
+
 ];
 
 

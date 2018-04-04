@@ -21,6 +21,7 @@
           type = "button" 
           *ngIf="router('forward')"
           class="btn btn-primary"
+          [disabled] = "disabled()"
           [routerLink]="router('forward')">
             Næste
           
@@ -31,3 +32,5 @@
       </div>
   </div>
 </div>
+
+

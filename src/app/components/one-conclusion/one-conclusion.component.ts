@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TxtSharedService } from '../../TxtSharedService/txtSharedService';
+import { StateService } from '../../state/stateContainer';
 
 @Component({
   selector: 'app-one-conclusion',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OneConclusionComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public text: TxtSharedService,
+    public state: StateService,
+  ) {}
+
 
   ngOnInit() {
   }
+
+  getTxtId() {
+    return `${this.state.mainState.type}_txt`
+  }
+
+
 
 }

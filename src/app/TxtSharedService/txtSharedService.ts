@@ -41,7 +41,7 @@ export class TxtSharedService implements OnInit {
 
         this._lang.setRessources(urlMapper);
         this._lang.getMultipleTxt(neededTxt).subscribe(el => {
-
+    
         this.add(el);
 
         });
@@ -78,6 +78,7 @@ export class TxtSharedService implements OnInit {
     }
 
     check(txt: string) {
+
 
         this.mapper.forEach(element => {
 

@@ -34,6 +34,7 @@ export class SkatteForholdIndkomstService {
             const
                 pos = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(true))),
                 neg = this.translateToBeskatningstype(this.getType_(this.buildVariableSet(false)));
+     
 
             return {truthly183Rule: pos, falsy183Rule: neg};
 
@@ -46,16 +47,20 @@ export class SkatteForholdIndkomstService {
 
     private translateToBeskatningstype(data: any) {
 
-        /**
-         * data.afvis === 'X'
-         */
-        console.log(data);
+        if (data === undefined || this.state.diverse.specialCircumstances) {
+            return 13;
+        }
 
-        return data.result.afvis === 'X' ? 13 : loonIndkomstType
+        const type = loonIndkomstType
             .find(el => {
                 return el.indkomst.indexOf(Number(data.result.indkomst)) > -1  && el.skat === data.result.skat;
             })
-            .value;
+
+        //  data.result.afvis === 'X' ? 13 : 
+    
+        return type 
+            ? data.result.afvis === 'X' ? 13 : type.value
+            : 13 
 
     }
 
@@ -179,11 +184,9 @@ export class SkatteForholdIndkomstService {
             }
         ];
 
-        console.log(origin);
 
         const _obj = map.find(el => type === el.type && originMap === el.origin);
 
-        console.log(_obj);
 
         return _obj ? _obj.value : -1;
 

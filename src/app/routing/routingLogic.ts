@@ -42,6 +42,10 @@ export class RoutingService {
             this.deleteElement(copy, ['opholdOver183dage', 'betingelse33A']);
         }
 
+        if (this.state.diverse.notSpecial !== true) {
+            this.deleteElement(copy, ['opholdOver183dage', 'betingelse33A']);
+        }
+
       }
 
       if (type === 'pension') {
@@ -97,5 +101,100 @@ export class RoutingService {
         }
 
     }
+
+    disabled() {
+
+        const validation = [
+
+            {
+              id: 'type',
+              fn: () => {
+                return !!this.isSet(this.state.mainState.type) 
+                
+              }
+            },
+            {
+              id: 'land',
+              fn: () => {
+                return !!this.isSet(this.state.mainState.land) 
+              }
+            },
+            {
+              id: 'periode',
+              fn: () => {
+                return !!this.period.from && !!this.period.to
+              }
+            },
+            {
+              id: 'arbejdsgiver',
+              fn: () => {
+                const basic = this.isSet(this.state.arbejdsgiverForhold.publicPrivate) &&
+                this.isSet(this.state.arbejdsgiverForhold.originOfFirm) 
+
+                if (this.isNotLocalCountry() && this.commons.getCountryGroup() !== 8) {
+                    return basic && this.state.arbejdsgiverForhold.fixedOfficeInCountry !== null &&
+                    this.state.arbejdsgiverForhold.fixedOfficeInCountry !== undefined;
+                } else {
+                    return basic;
+                }       
+              }
+            },
+            {
+                id: 'diverse',
+                fn: () => {
+                  const socialsecured = (this.commons.getCountryGroup() === 6) 
+                    ? this.booleanIsSet(this.state.diverse.socialSecured) 
+                    : true;
+
+                  const udlej = (this.commons.getCountryGroup() !== 8) 
+                    ? this.booleanIsSet(this.state.diverse.arbejdsudlejet) 
+                    : true;
+
+                
+                    return socialsecured && udlej;
+            
+                }
+            },
+            {
+                id: 'betingelse33A',
+                fn: () => {
+                    console.log('called')
+                    return this.booleanIsSet(this.state.betingelser33A.vilAnvende33A)
+                }
+            },
+            {
+                id: 'opholdOver183dage',
+                fn: () => {
+                    return this.taxPeriod.getPeriodIdTypeForCountry() === 2 
+                        ? this.booleanIsSet(this.taxPeriod.over183dageNormalCase)
+                        : this.taxPeriod.periods.every(el => this.booleanIsSet(el.userAbove_183))
+
+                }
+            }
+          ]
+
+        const routeId = this.currentRouteId();
+
+        const val = validation.find(el => el.id === routeId)
+
+        return val ? val.fn() : true;
+
+
+    }
+
+    isSet(id: string) {
+        return id && id.length > 0;
+    }
+
+    booleanIsSet(val: boolean) {
+        return val === false || val === true
+    }
+
+    isNotLocalCountry () {
+
+        const hjemland = this.state.arbejdsgiverForhold.originOfFirm;
+        return hjemland === 'DK' || hjemland === 'other';
+    
+      }
 
 }

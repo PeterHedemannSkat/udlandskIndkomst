@@ -1,5 +1,11 @@
 <div [innerHTML] = "text.get(getTaxType(),'skatteTyperConclusion')"></div>
 
+<div *ngIf = "this.state.mainState.type === 'capitalIncome'"> 
+  <p>{{text.get('undtagelseKapitalIndkomst')}}</p>
+</div>
+
+<div [innerHTML] = "text.get('forbeholdJura')"></div>
+
 
 
 

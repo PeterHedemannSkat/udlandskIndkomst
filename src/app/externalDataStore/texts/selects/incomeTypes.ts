@@ -5,23 +5,28 @@ export const incomeTypes = [
       },
       {
         id: 'capitalIncome',
-        da: 'Formue og renter fra udlandet'
+        da: 'Renter fra udlandet'
+      },
+      {
+        id: 'pension',
+        da: 'Pensionsindkomst'
       },
       {
         id: 'stocks',
         da: 'Udenlandske aktier og investeringsbeviser'
       },
       {
-        id: 'firmIncome',
-        da: 'Indkomst fra virksomhed i udlandet'
+        id: 'bestyrelsesHon',
+        da: 'Bestyrelseshonorarer'
       },
       {
         id: 'intOrg',
         da: 'Indkomst fra international organisation'
       },
       {
-        id: 'pension',
-        da: 'Pensionsindkomst'
+        id: 'ejendomme',
+        da: 'Ejendom i udlandet'
       }
+
 ];
 

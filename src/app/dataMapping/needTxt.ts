@@ -12,6 +12,7 @@ export const neededTxt = [
     'aktietype',
     'pensionstxt',
     'pensionsType',
-    'incomeTypesIntOrg'
+    'incomeTypesIntOrg',
+    'specialPensionTxt'
 
 ];

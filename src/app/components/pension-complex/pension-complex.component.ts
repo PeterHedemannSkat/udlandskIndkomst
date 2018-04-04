@@ -58,4 +58,20 @@ export class PensionComplexComponent implements OnInit {
     });
   }
 
+  isException() {
+
+    const group1 = this.getSpg_(1)
+
+    const group2 = this.showGroupTwo()
+
+    const all = [].concat(group1, group2)
+
+    const exeption = [98, 23, 21]
+
+    return all.find(el => {
+      return exeption.indexOf(el.TxtId) > -1    
+    })
+
+  }
+
 }

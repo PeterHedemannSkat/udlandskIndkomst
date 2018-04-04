@@ -45,8 +45,6 @@ export class UrlRessourceService {
                 const cached = this.store.find(el_ => el_.id === id);
                 cached.data = el;
 
-                console.log(cached)
-
             });
 
             return null;

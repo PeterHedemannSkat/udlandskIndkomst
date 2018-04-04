@@ -14,6 +14,39 @@ export const udlandstekster = [
     {
         id: 'udelandskindkomst',
         da: 'Udenlandsk virksomhedsindkomst'
+    },
+    {
+        id: 'ringKC',
+        da: 'For at afgøre om du er omfattet af undtagelsen, bør du ringe til kundecentret 72 22 22 22'
+    },
+    {
+        id: 'linkTextBorgerdk',
+        da: 'læs mere på borger.dk'
+    },
+    {
+        id: 'forbeholdJura',
+        da: '<p>Vi tager forbehold .... </p>'
+    },
+    {
+        id: 'socialsikringUddybet',
+        da: 'Du er socialsikret når.....'
+    },
+    {
+        id: 'undtagelseKapitalIndkomst',
+        da: '<h4>Særlige forhold</h4>'
+    },
+    {
+        id: 'bestyrelsesHon_txt',
+        da: '<h4>Bestyrelseshonorar</h4>'
+    },
+    {
+        id: 'ejendomme_txt',
+        da: '<h4>Ejendommme</h4>'
+    },
+    {
+        id: 'special_German_Case',
+        da: 'Det er arbejdsdagene i Tyskland der tæller'
     }
+    
 ];
 

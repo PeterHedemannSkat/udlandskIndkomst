@@ -12,7 +12,11 @@ export const stepMapper = [
         steps: ['intro', 'type', 'land', 'simpleConclusion']
     },
     {
-        type: 'firmIncome',
+        type: 'ejendomme',
+        steps: ['intro', 'type', 'simplicity']
+    },
+    {
+        type: 'bestyrelsesHon',
         steps: ['intro', 'type', 'simplicity']
     },
     {

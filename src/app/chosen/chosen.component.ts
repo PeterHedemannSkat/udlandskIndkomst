@@ -44,14 +44,12 @@ export class ChosenComponent implements AfterViewInit, OnChanges {
 
     const options = changes['options'];
 
-    console.log(options);
-
     if (options && options.currentValue) {
 
       if (!options.previousValue && options.currentValue) {
 
         setTimeout(() => {
-          console.log('***')
+
           $('#' + this.idDom).trigger("chosen:updated");
         }, 0);
 
@@ -67,14 +65,8 @@ export class ChosenComponent implements AfterViewInit, OnChanges {
             break;
           }
         }
-
       }
-
-
-
     }
-
-
   }
 
     //

@@ -56,6 +56,9 @@ export class PensionsSkatteTypeService {
 
   }
 
+  
+
+
   isRegular() {
 
     const isRegular = !this.countryGroup();
@@ -176,7 +179,13 @@ export class PensionsSkatteTypeService {
         indkomst: 295,
         skat: '-',
         type: 3
+      },
+      {
+        indkomst: 100,
+        skat: '-',
+        type: 5
       }
+
     ];
 
     if (!raw) {

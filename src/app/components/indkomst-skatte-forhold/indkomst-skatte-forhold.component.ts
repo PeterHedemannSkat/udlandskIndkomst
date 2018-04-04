@@ -27,7 +27,15 @@ export class IndkomstSkatteForholdComponent implements OnInit {
     public txtCalender: PrintService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+
+    const is = !!this.taxPeriods.periods
+    
+    if (!is) {
+      this.taxPeriods.periods = this.taxPeriods.getPeriods()
+    }
+  
+  }
 
   printTextSkatteType() {
 

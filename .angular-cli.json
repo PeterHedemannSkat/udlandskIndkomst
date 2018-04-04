@@ -27,7 +27,7 @@
         "assets/yetAnother.css"
       ],
       "scripts": [
-        "assets/jquery.min.js",
+  
         "../node_modules/chosen-js/chosen.jquery.js",
         "assets/calender.js"
       ],

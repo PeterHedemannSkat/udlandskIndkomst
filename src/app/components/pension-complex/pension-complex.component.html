@@ -1,4 +1,39 @@
 
+
+
+
+<div *ngFor="let spg of getSpg_(1); let i = index">
+
+    <p *ngIf = "text.get(spg.TxtId.toString(), 'specialPensionTxt')">
+      {{text.get(spg.TxtId.toString(), 'specialPensionTxt')}}
+    </p>
+
+    <app-ja-nej 
+      [(value)] = "state.pension.values[i]"
+      [label]   = "text.get(spg.TxtId.toString(), 'pensionstxt')" 
+    ></app-ja-nej> 
+
+
+</div>
+
+
+<div *ngFor = "let spg of showGroupTwo(); let i = index">
+
+    <app-ja-nej 
+      [(value)] = "state.pension.values[i + getSpg_(1).length]"
+      [label]   = "text.get(spg.TxtId.toString(), 'pensionstxt')" 
+    ></app-ja-nej> 
+
+</div>
+
+<hr>
+
+<div *ngIf = "isException()">
+  <div [innerHTML] = "text.get('ringKC')"></div>
+</div>
+
+<!--
+
 <app-ja-nej 
   *ngFor="let spg of getSpg_(1); let i = index"
   [(value)] = "state.pension.values[i]"
@@ -11,6 +46,8 @@
   [label]   = "text.get(spg.TxtId.toString(), 'pensionstxt')" 
 ></app-ja-nej> 
 
+
+-->
 
 
 

@@ -30,7 +30,7 @@ export const grupper = [
     /** Tyskland OK, USA */
     {
         gruppe: 'singles',
-        lande: ['DE']
+        lande: ['DE','BE','US']
     }
 ];
 

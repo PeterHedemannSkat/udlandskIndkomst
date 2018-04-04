@@ -1,15 +1,31 @@
-<app-ja-nej 
-  *ngIf     = "commons.getCountryGroup() === 6" 
+<div  *ngIf = "commons.getCountryGroup() === 6" >
+
+  <app-ja-nej 
   [(value)] = "state.diverse.socialSecured" 
   [label]   = "text.get('labelSocialSecured')" 
-></app-ja-nej>
+  ></app-ja-nej>
+
+
+  <p>
+      {{text.get('socialsikringUddybet')}}
+      <br>
+      <a href="https://www.borger.dk/danskere-i-udlandet/Arbejde-i-udlandet/International-social-sikring" target = "_blank">
+        {{text.get('linkTextBorgerdk')}}
+      </a>
+      <br><br>
+  </p>
+
+
+
+</div>
+
 
 <ng-container *ngIf = "commons.getCountryGroup() !== 8">
     <app-ja-nej 
     [(value)] = "state.diverse.arbejdsudlejet" 
     [label]   = "text.get('arbejdsudlejet')" 
   ></app-ja-nej>
-  <p><a href="http://skat.dk/skat.aspx?oId=2234886" target="_blank">{{text.get('laesOmArbejdsleje')}}</a></p>
+  <p>{{text.get('laesOmArbejdsleje')}}</p>
 </ng-container>
 
 <app-radio-button 

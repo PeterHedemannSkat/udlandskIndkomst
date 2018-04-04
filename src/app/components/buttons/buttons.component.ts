@@ -22,6 +22,10 @@ export class ButtonsComponent implements OnInit {
     return this.routingService.findRoute(direction);
   }
 
+  disabled() {
+    return !this.routingService.disabled()
+  }
+
 
 
 

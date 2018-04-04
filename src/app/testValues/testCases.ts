@@ -32,9 +32,9 @@ export class TestService {
 
             const
                 from = new Date(2018, 2, 10),
-                to = new Date(2019, 9, 9),
-                type = 'pension',
-                arbejdsgiverOrigin = '', // workCountry, other, DK
+                to = new Date(2018, 5, 9),
+                type = 'loon',
+                arbejdsgiverOrigin = 'workCountry', // workCountry, other, DK
                 privatOffentlig = 'privat', // privat offentlig
                 land = 'Italien', // Storbritannien Australien
                 fastKontor = false,
@@ -46,15 +46,15 @@ export class TestService {
                 pension = 'off';
 
             //this.state.mainState.type = type;
-            this.periode.from = from;
-            this.periode.to = to;
-            this.state.mainState.land = this.commons.getCountryID(land);
-            this.state.arbejdsgiverForhold.originOfFirm = arbejdsgiverOrigin;
-            this.state.arbejdsgiverForhold.publicPrivate = privatOffentlig;
-            this.state.arbejdsgiverForhold.fixedOfficeInCountry = fastKontor;
-            this.state.diverse.arbejdsudlejet = udlejet;
-            this.state.betingelser33A.vilAnvende33A = vilAnvende33A;
-            this.state.pension.type = pension;
+            //this.periode.from = from;
+            //this.periode.to = to;
+            //this.state.mainState.land = 'RO';
+            //this.state.arbejdsgiverForhold.originOfFirm = arbejdsgiverOrigin;
+            //this.state.arbejdsgiverForhold.publicPrivate = privatOffentlig;
+            //this.state.arbejdsgiverForhold.fixedOfficeInCountry = fastKontor;
+            //this.state.diverse.arbejdsudlejet = udlejet;
+            //this.state.betingelser33A.vilAnvende33A = vilAnvende33A;
+            //this.state.pension.type = pension;
 
             /**
              * skal kaldes hvis vi starter på en sent trin
@@ -62,13 +62,14 @@ export class TestService {
              * OBS kræver at periods fra og til er sat + land
              */
 
-
+            /*
 
             this.taxPerioder.periods = this.taxPerioder.getPeriods();
             this.taxPerioder.periods.forEach((el, i) => {
                 el.userAbove_183 = kompleks183dage[i];
             });
             this.taxPerioder.over183dageNormalCase = simple183dage;
+            */
 
 
 

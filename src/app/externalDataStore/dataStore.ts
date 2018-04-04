@@ -14,7 +14,7 @@ import { saerligeOmstaendigheder } from './texts/selects/saerligeomstaendinger';
 import { aktietype } from './texts/selects/aktietype';
 import { rente } from './rente';
 import { intOrgIncomeTypes } from './texts/selects/intOrgIncomeType';
-import { pensionstxt } from './texts/pensionSaerligTxt';
+import { pensionstxt, specialPensionTxt } from './texts/pensionSaerligTxt';
 import { pensionsType } from './texts/selects/pensionType';
 import { privatPension } from './privatPension';
 import { offentligPension } from './offPension';
@@ -49,7 +49,8 @@ export class ExternalData implements InMemoryWebApiModule {
                 socialPension,
                 InternationalOrg,
                 incomeTypesIntOrg,
-                countries
+                countries,
+                specialPensionTxt
             };
         }
     }

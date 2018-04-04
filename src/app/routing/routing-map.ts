@@ -12,7 +12,7 @@ import { IndkomstSkatteForholdComponent } from "../components/indkomst-skatte-fo
 import { AktieindkomstComponent } from "../components/aktieindkomst/aktieindkomst.component";
 import { SimpleConclusionComponent } from '../components/simple-conclusion/simple-conclusion.component';
 import { OneConclusionComponent } from "../components/one-conclusion/one-conclusion.component";
-import { IntOrgIndkomstTypeComponent } from '../components/int-org-indkomst-type/int-org-indkomst-type.component';
+
 import { PensionTypeComponent } from "../components/pension-type/pension-type.component";
 import { PensionComplexComponent } from '../components/pension-complex/pension-complex.component';
 import { IntOrgComponent } from '../components/int-org/int-org.component';
@@ -71,10 +71,7 @@ export const routes: Routes = [{
     path: 'simplicity',
     component: OneConclusionComponent
   },
-  {
-    path: 'incometype',
-    component: IntOrgIndkomstTypeComponent
-  },
+
   {
     path: 'pensionType',
     component: PensionTypeComponent

@@ -194,5 +194,97 @@ export const pensionsSaerligeBeskatningsTyper = [
       'indkomst': 320,
       'skat': '-'
     }
+  },
+  {
+    'LandId': 'BE',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'BE',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'US',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'US',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'US',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'US',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
   }
 ];
+
+/** 
+ * 
+ * Inkl: Tyskland, Belgien
+ * 
+ * mangler:
+ * USA
+ */

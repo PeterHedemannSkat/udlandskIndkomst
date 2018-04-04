@@ -63,6 +63,10 @@ export const urlMapper: UrlRessources[] = [
         skatdk: '10324'
     },
     {
+        local: 'specialPensionTxt',
+        skatdk: '12458'
+    },
+    {
         local: 'app/privatPension',
         skatdk: 'privatPension.json'
     },
