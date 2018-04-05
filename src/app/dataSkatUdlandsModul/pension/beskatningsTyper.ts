@@ -113,6 +113,20 @@ export const pensionsSaerligeBeskatningsTyper = [
   },
   {
     'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'B',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false, true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
     'pensionsType': 'off',
     'LandGruppe': 'D',
     'firstBoolean': {

@@ -42,6 +42,8 @@ export class PensionsSkatteTypeService {
           skat: country_.Skat
         };
 
+        const taxType = this.taxTranslation({skatningstype: a}) 
+
         return this.taxTranslation({skatningstype: a}).toString();
 
       }
@@ -189,12 +191,12 @@ export class PensionsSkatteTypeService {
     ];
 
     if (!raw) {
-      return -1;
+      return 13;
     }
 
     const type = translate.find(el => el.indkomst === raw.skatningstype.indkomst && el.skat === raw.skatningstype.skat);
 
-    return type ? type.type : -1;
+    return type ? type.type : 13;
 
   }
 
