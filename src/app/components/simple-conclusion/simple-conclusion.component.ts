@@ -46,7 +46,7 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   isUdbytte() {
-    return this.state.aktier.type === 'udbytte'
+    return this.state.aktier.type === 'udbytte' && this.state.mainState.type === 'stocks';
   }
 
   getUdbyttePct() {
