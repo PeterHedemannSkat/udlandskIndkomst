@@ -6,6 +6,7 @@ import { UrlRessourceService } from '../../urlRessource/urlressource';
 import { KapitalIndkomstSkatteTypeService } from '../../servicesUdenlandskIndkomst/kapitalIndkomstSkatteType';
 import { PensionsSkatteTypeService } from '../../servicesUdenlandskIndkomst/pensionsSkattetype';
 import { IntOrgService } from '../../servicesUdenlandskIndkomst/intOrg';
+import { BestyrelsesHonorarService } from '../../servicesUdenlandskIndkomst/bestyrelseshonorar';
 
 @Component({
   selector: 'app-simple-conclusion',
@@ -20,7 +21,8 @@ export class SimpleConclusionComponent implements OnInit {
     public aktier: AktieSkatteTypeService,
     private rente: KapitalIndkomstSkatteTypeService,
     public pension: PensionsSkatteTypeService,
-    public intOrg: IntOrgService
+    public intOrg: IntOrgService,
+    public bestyr: BestyrelsesHonorarService
   ) { }
 
   ngOnInit() {
@@ -37,6 +39,8 @@ export class SimpleConclusionComponent implements OnInit {
         return this.pension.getPensionsBeskatning();
       case 'intOrg':
         return this.intOrg.getResultType().toString();
+      case 'bestyrelsesHon':
+        return this.bestyr.getTaxType().toString();
 
     }
   }

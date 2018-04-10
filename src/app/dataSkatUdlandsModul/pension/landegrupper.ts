@@ -9,17 +9,17 @@ export const grupper = [
         /** afklaring Serbien, Kina, tjekkiet, Kuwait - privat, her er der ingen entydig logisk forbindelse til beskatningstype */
     {
         gruppe: 'B',
-        lande: ['RS', 'IL', 'CN', 'CZ', 'KW']
+        lande: []
     },
     /** mangler Fæøerne, Luxemborg */
     {
         gruppe: 'C',
-        lande: ['FO', 'LU']
+        lande: []
     },
     /** fungerer [off, privat]  */
     {
         gruppe: 'D',
-        lande: ['IT', 'VN', 'CY', 'EE', 'PH', 'IE', 'HR', 'LV', 'LT', 'MK', 'MT', 'MA', 'MX', 'NZ', 'PL', 'SG', 'SI',
+        lande: ['IT', 'VN', 'CY', 'EE', 'PH', 'IE', 'HR', 'LV', 'LT', 'MT', 'MA', 'MX', 'NZ', 'PL', 'SG', 'SI',
          'GB', 'ZA', 'TW', 'UG', 'UA', 'AT']
     },
     /** fungerer Montenegro Holland [off] */
@@ -30,7 +30,7 @@ export const grupper = [
     /** Tyskland OK, USA */
     {
         gruppe: 'singles',
-        lande: ['DE','BE','US']
+        lande: ['DE','BE','US','JP']
     }
 ];
 

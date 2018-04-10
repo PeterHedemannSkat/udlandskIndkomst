@@ -17,7 +17,7 @@ export const stepMapper = [
     },
     {
         type: 'bestyrelsesHon',
-        steps: ['intro', 'type', 'simplicity']
+        steps: ['intro', 'type', 'land', 'simpleConclusion']
     },
     {
         type: 'intOrg',

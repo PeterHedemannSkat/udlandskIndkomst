@@ -61,6 +61,7 @@ import { PensionsSkatteTypeService } from './servicesUdenlandskIndkomst/pensions
 import { IntOrgComponent } from './components/int-org/int-org.component';
 import { IntOrgIncomeTypeComponent } from './components/int-org-income-type/int-org-income-type.component';
 import { IntOrgService } from './servicesUdenlandskIndkomst/intOrg';
+import { BestyrelsesHonorarService } from './servicesUdenlandskIndkomst/bestyrelseshonorar';
 
 
 
@@ -122,7 +123,9 @@ import { IntOrgService } from './servicesUdenlandskIndkomst/intOrg';
     AktieSkatteTypeService,
     KapitalIndkomstSkatteTypeService,
     PensionsSkatteTypeService,
-    IntOrgService
+    IntOrgService,
+    BestyrelsesHonorarService
+
 
   ],
   bootstrap: [AppComponent]

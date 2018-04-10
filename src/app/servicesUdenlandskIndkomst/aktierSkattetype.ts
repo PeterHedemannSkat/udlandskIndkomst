@@ -37,7 +37,7 @@ export class AktieSkatteTypeService {
 
       const _aktier = this.state.aktier;
 
-      return resultMap.find(el => el.noterede === _aktier.noterede && el.type === _aktier.type).result.toString();
+      return resultMap.find(el => /* el.noterede === _aktier.noterede && */ el.type === _aktier.type).result.toString();
 
     }
 

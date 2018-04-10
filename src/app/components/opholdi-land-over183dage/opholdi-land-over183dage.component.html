@@ -8,10 +8,14 @@
   ></app-ja-nej>
 
   <div *ngIf = "state.mainState.land === 'DE'">
-      {{text.get('special_German_Case')}}
+    <p>{{text.get('special_German_Case')}}</p>
   </div>
 
-  <p>{{text.get('label183DageNormal_expanded')}}</p>
+  <div *ngIf = "state.mainState.land !== 'DE'">
+    <p>{{text.get('label183DageNormal_expanded')}}</p>
+  </div>
+
+
 
  
   

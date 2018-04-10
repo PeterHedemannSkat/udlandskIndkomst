@@ -292,7 +292,37 @@ export const pensionsSaerligeBeskatningsTyper = [
       'indkomst': 320,
       'skat': '-'
     }
+  },
+  {
+    'LandId': 'JP',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'JP',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 0,
+      'skat': 0
+    }
   }
+
+
 ];
 
 /** 

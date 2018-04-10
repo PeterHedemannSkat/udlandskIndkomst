@@ -158,7 +158,6 @@ export class RoutingService {
             {
                 id: 'betingelse33A',
                 fn: () => {
-                    console.log('called')
                     return this.booleanIsSet(this.state.betingelser33A.vilAnvende33A)
                 }
             },
@@ -170,7 +169,24 @@ export class RoutingService {
                         : this.taxPeriod.periods.every(el => this.booleanIsSet(el.userAbove_183))
 
                 }
-            }
+            },
+            {
+                id: 'pensionType',
+                fn: () => {
+                    return this.isSet(this.state.pension.type)
+                }
+            },
+            {
+                id: 'PensionComplex',
+                fn: () => {
+
+                    const dataArray = this.state.pension.values
+                    console.log(dataArray)
+                    return dataArray.length && dataArray.every(el => el === false || el === true);
+                }
+            },
+
+            
           ]
 
         const routeId = this.currentRouteId();

@@ -297,7 +297,7 @@ export const mainLogic = [
     'SpgNr': 1,
     'Type': 'privat',
     'ShowIfSpg1EqualTo': '',
-    'TxtId': 23
+    'TxtId': 98
   },
   {
     'LandId': 'BE',
@@ -341,7 +341,8 @@ export const mainLogic = [
     'ShowIfSpg1EqualTo': true,
     'TxtId': 21
 
-  },
+  }
+
 
 ];
 
