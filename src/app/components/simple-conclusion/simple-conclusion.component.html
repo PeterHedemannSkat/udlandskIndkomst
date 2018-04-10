@@ -4,9 +4,11 @@
   <p>{{text.get('undtagelseKapitalIndkomst')}}</p>
 </div>
 
-<p>Brasilienundtagelse! kun ved valg af udbytte</p>
+<div *ngIf = "isUdbytte()">
+  <p>Beskatningsprocent: <b>{{getUdbyttePct()}} %</b></p>
+  <p>{{text.get('beskatningsudbytte_tekst')}}</p>
 
-<p>undtagelser ved valg af aktiegevinst, indsæt landevalg</p>
+</div>
 
 
 

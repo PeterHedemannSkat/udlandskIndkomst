@@ -62,6 +62,21 @@ export class RoutingService {
 
       }
 
+      /*
+
+      if (type === 'stocks') {
+
+        const typeIncome = this.state.aktier.type 
+
+        if (typeIncome === 'gevinst') {
+            this.deleteElement(copy, ['land'])
+        }
+
+
+      }
+
+      */
+
       return copy;
 
     }

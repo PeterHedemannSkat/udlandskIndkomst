@@ -10,35 +10,20 @@ export class AktieSkatteTypeService {
 
     }
 
-    stocks() {
+    getGeneralSkatteType() {
 
-      const resultMap = [{
-          type: 'udbytte',
-          noterede: false,
-          result: 1
-        },
-        {
-          type: 'udbytte',
-          noterede: true,
-          result: 1
-        },
-        {
-          type: 'gevinst',
-          noterede: false,
-          result: 2
-        },
-        {
-          type: 'gevinst',
-          noterede: true,
-          result: 2
-        }
+      const
+        type = this.state.aktier.type,
+        country = this.state.mainState.land
 
-      ];
-
-      const _aktier = this.state.aktier;
-
-      return resultMap.find(el => /* el.noterede === _aktier.noterede && */ el.type === _aktier.type).result.toString();
+      if (type === 'udbytte') {
+        return country === 'BR' ? 3 : 1; 
+      } else {
+        const creditCountries = ['BR', 'ID', 'JM', 'GL', 'LV'];
+        return (creditCountries.indexOf(country) > -1) ? 1 : 2 
+      }
 
     }
+
 
 }

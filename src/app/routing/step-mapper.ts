@@ -5,7 +5,7 @@ export const stepMapper = [
     },
     {
         type: 'stocks',
-        steps: ['intro', 'type', 'aktieindkomst' , 'simpleConclusion']
+        steps: ['intro', 'type', 'land','aktieindkomst', 'simpleConclusion']
     },
     {
         type: 'capitalIncome',

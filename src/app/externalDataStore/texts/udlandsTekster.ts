@@ -46,6 +46,10 @@ export const udlandstekster = [
     {
         id: 'special_German_Case',
         da: 'Det er arbejdsdagene i Tyskland der tæller'
+    },
+    {
+        id: 'beskatningsudbytte_tekst',
+        da: 'Tekst om beskatningspct'
     }
     
 ];
