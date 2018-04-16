@@ -7,6 +7,7 @@ import { KapitalIndkomstSkatteTypeService } from '../../servicesUdenlandskIndkom
 import { PensionsSkatteTypeService } from '../../servicesUdenlandskIndkomst/pensionsSkattetype';
 import { IntOrgService } from '../../servicesUdenlandskIndkomst/intOrg';
 import { BestyrelsesHonorarService } from '../../servicesUdenlandskIndkomst/bestyrelseshonorar';
+import { CommonUdlandsService } from '../../servicesUdenlandskIndkomst/commonServices';
 
 @Component({
   selector: 'app-simple-conclusion',
@@ -22,7 +23,8 @@ export class SimpleConclusionComponent implements OnInit {
     private rente: KapitalIndkomstSkatteTypeService,
     public pension: PensionsSkatteTypeService,
     public intOrg: IntOrgService,
-    public bestyr: BestyrelsesHonorarService
+    public bestyr: BestyrelsesHonorarService,
+    private common: CommonUdlandsService
   ) { }
 
   ngOnInit() {
@@ -46,7 +48,7 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   isUdbytte() {
-    return this.state.aktier.type === 'udbytte' && this.state.mainState.type === 'stocks';
+    return this.state.aktier.type === 'udbytte' && this.state.mainState.type === 'stocks' && this.common.getCountryGroup() !== 8;
   }
 
   getUdbyttePct() {

@@ -1,0 +1,46 @@
+Israel - pension*
+  - A
+
+
+Har du fået fradrag i din skattepligtige indkomst i Israel for dine indbetalinger til din israelske pensionsordning? Du skal kun svare på spørgsmålet, hvis du selv har indbetalt på pensionsordningen i Israel.
+ 	 	Ja	Nej
+Skulle du betale skat af de beløb, som din arbejdsgiver indbetalte på din israelske pensionsordning? Du skal kun svare på spørgsmålet, hvis din arbejdsgiver har indbetalt på din israelske pensionsordning.
+ 	 	Ja	Nej
+
+
+Hører til mærkelig kategori, hvor - ja-ja fører til forskellig beskatningstype
+
+Schweiz
+
+3 spørgsmål - kompleks
+
+Tidspunkt
+skattepligt 
+Betale skat Arbejdsgiver eller Fradrag for selv? 
+
+Ungarn HU
+
+Type BetaltskatArbj-FradragForSelv >> Privat
+Off - Modsigende
+
+
+KW Kuweit
+Type BetaltskatArbj-FradragForSelv >> Privat
+off - Dansk statsborger 
+
+Banladesh 
+>> Off = Dansk Statsborger
+>> Privat = undtagelse
+
+
+Belgien (BE)
+>> Privt = undtagelse 
+>> off = 
+    dansk statsborger (dobbelt -> nej) (NEJ = 320/- [Excep/3] --- JA: afhænger af 2.)
+  + hjemmehørende i land && (bortseelsesret eller fradragsberettiget, dvs. normale betingelser)
+    (JA,NEJ => 228/- => Dansk Beskatning) (JA,JA => 290/786 => Credit)
+
+Cypern (CY), Estland EE, Philippinerne PH,
+>> privat => undtagelse [umulige spg.]
+>> off => dansk statsborger [Ja = 228/- DK beskatning, Nej 320/- Excep]
+
