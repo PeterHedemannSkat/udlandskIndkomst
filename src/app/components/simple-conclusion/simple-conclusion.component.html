@@ -5,7 +5,7 @@
 </div>
 
 <div *ngIf = "isUdbytte()">
-  <p>Beskatningsprocent: <b>{{getUdbyttePct()}} %</b></p>
+  <p>{{text.get('skatteprocent')}} {{common.getCountryNameReg()}}: <b>{{getUdbyttePct()}} %</b></p>
   <p>{{text.get('beskatningsudbytte_tekst')}}</p>
 
 </div>

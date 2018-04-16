@@ -24,7 +24,7 @@ export class SimpleConclusionComponent implements OnInit {
     public pension: PensionsSkatteTypeService,
     public intOrg: IntOrgService,
     public bestyr: BestyrelsesHonorarService,
-    private common: CommonUdlandsService
+    public common: CommonUdlandsService
   ) { }
 
   ngOnInit() {

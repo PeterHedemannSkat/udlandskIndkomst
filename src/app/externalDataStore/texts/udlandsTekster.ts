@@ -50,6 +50,10 @@ export const udlandstekster = [
     {
         id: 'beskatningsudbytte_tekst',
         da: 'Tekst om beskatningspct'
+    },
+    {
+        id: 'skatteprocent',
+        da: 'Skatteprocent i'
     }
     
 ];
