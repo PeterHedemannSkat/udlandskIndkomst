@@ -6,9 +6,19 @@
 
 <div *ngIf = "isUdbytte()">
   <p>{{text.get('skatteprocent')}} {{common.getCountryNameReg()}}: <b>{{getUdbyttePct()}} %</b></p>
+  <!-- Hvis Brasilien skal denne ikke vises  ... -->
   <p>{{text.get('beskatningsudbytte_tekst')}}</p>
 
 </div>
+
+<div *ngIf= "isRente()">
+  <p>{{text.get('skatteprocent_rente')}} {{common.getCountryNameReg()}}: <b>{{getRentePct()}} %</b></p>
+  <p>{{text.get('beskatningrente_tekst')}}</p>
+</div>
+
+<p *ngIf = "isGronland()">
+  {{text.get('gronland_renteTekst')}}
+</p>
 
 
 

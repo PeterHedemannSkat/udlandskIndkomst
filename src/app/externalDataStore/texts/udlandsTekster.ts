@@ -54,6 +54,18 @@ export const udlandstekster = [
     {
         id: 'skatteprocent',
         da: 'Skatteprocent i'
+    },
+    {
+        id: 'skatteprocent_rente',
+        da: 'Skatteprocent i'
+    },
+    {
+        id: 'beskatningrente_tekst',
+        da: 'Rentetekst .... '
+    },
+    {
+        id: 'gronland_renteTekst',
+        da: 'Grønlands tekst ....'
     }
     
 ];

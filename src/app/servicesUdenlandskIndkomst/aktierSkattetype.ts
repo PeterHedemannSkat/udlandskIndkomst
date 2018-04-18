@@ -30,8 +30,13 @@ export class AktieSkatteTypeService {
       if (type === 'udbytte') {
         return country === 'BR'? 3 : 1; 
       } else {
-        const creditCountries = ['BR', 'ID', 'JM', 'GL', 'LV'];
-        return (creditCountries.indexOf(country) > -1) || isNonDBO   ? 1 : 2 
+        const creditCountries = ['ID', 'JM', 'GL', 'LV'];
+        if (country === 'BR') {
+          return 13;
+        } else {
+          return (creditCountries.indexOf(country) > -1) || isNonDBO ? 1 : 2 
+        }
+      
       }
 
     }

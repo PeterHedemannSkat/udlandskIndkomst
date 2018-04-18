@@ -51,6 +51,14 @@ export class SimpleConclusionComponent implements OnInit {
     return this.state.aktier.type === 'udbytte' && this.state.mainState.type === 'stocks' && this.common.getCountryGroup() !== 8;
   }
 
+  isRente() {
+    return this.state.mainState.type === 'capitalIncome' && this.common.getCountryGroup() !== 8 && this.state.mainState.land !== 'GL'
+  }
+
+  isGronland() {
+    return this.state.mainState.land === 'GL'
+  }
+
   getUdbyttePct() {
 
     const pctMap = [
@@ -97,6 +105,33 @@ export class SimpleConclusionComponent implements OnInit {
     const specialCountry = pctMap.find(el => el.country === this.state.mainState.land);
 
     return specialCountry ? specialCountry.pct : 15;
+
+  }
+
+  getRentePct() {
+
+    const country = this.state.mainState.land;
+
+    const satser: Object = {
+      10: ['AU', 'BD', 'BE', 'CA', 'EE', 'PH', 'ID', 'IT', 'JP', 'CN', 'LV', 'LT', 'MA', 'NZ', 'PT', 'RO', 'RS', 'SG', 'LK', 'HU', 'UA', 'VN', 'ZM'],
+      12: ['AR', 'TN'],
+      15: ['BR', 'CL', 'EG', 'IN', 'KR', 'MX', 'TH', 'PK', 'TT', 'TR'],
+      8: ['GH', 'GR'],
+      5: ['IL', 'HR', 'PL', 'SI', 'VE'],
+      20: ['KE'],
+      100: ['MY'],
+      special12: ['JM', 'TZ']
+    }
+
+    const sats = Object.keys(satser)
+      .find(el => {
+        return satser[el].indexOf(country) > -1 
+      })
+
+    return sats 
+      ? sats === 'special12' ? 12.5 : sats
+      : 0
+    
 
   }
 
