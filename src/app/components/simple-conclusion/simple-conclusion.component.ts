@@ -52,7 +52,8 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   isRente() {
-    return this.state.mainState.type === 'capitalIncome' && this.common.getCountryGroup() !== 8 && this.state.mainState.land !== 'GL'
+    return this.state.mainState.type === 'capitalIncome' && this.common.getCountryGroup() !== 8 && this.state.mainState.land !== 'GL' &&
+      this.getRentePct() !== 0; 
   }
 
   isGronland() {
@@ -107,6 +108,8 @@ export class SimpleConclusionComponent implements OnInit {
     return specialCountry ? specialCountry.pct : 15;
 
   }
+
+  /* 0 satser skal ikke vises ???  */
 
   getRentePct() {
 
