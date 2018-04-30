@@ -20,8 +20,6 @@ export class AktieSkatteTypeService {
        * 17/4 ændret
        */
 
-      
-
       const
         type = this.state.aktier.type,
         country = this.state.mainState.land,
@@ -29,7 +27,7 @@ export class AktieSkatteTypeService {
 
       if (type === 'udbytte') {
 
-        
+        if (country === 'GL') return 13; 
 
         return country === 'BR'? 3 : 1; 
 

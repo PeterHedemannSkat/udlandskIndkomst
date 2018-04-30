@@ -36,6 +36,10 @@ export class KapitalIndkomstSkatteTypeService {
       }
     ];
 
+    /**
+     * Anettes stjernelande problematik Viderestille til KC
+     */
+
 
 
     const
@@ -44,6 +48,17 @@ export class KapitalIndkomstSkatteTypeService {
       type = map.find(el => {
         return el.skat === Number(result.skat);
       }).type;
+
+
+    /**
+     * Returnerer ring ved særlige lande .... Anettes kommentar
+     */
+
+    const specialLande = ['CA', 'IT', 'US'].indexOf(country) > -1;
+
+    if (specialLande) {
+      return 13;
+    }
 
 
     return type;
