@@ -22,8 +22,13 @@ export class IndkomsttypeComponent implements OnInit {
 
   ngOnInit() {
 
+  }
 
+  publicTypes(arr: any) {
 
+    const publicItems = ['capitalIncome', 'stocks']
+
+    return arr.filter(el => publicItems.indexOf(el.value) > -1)
   }
 
 

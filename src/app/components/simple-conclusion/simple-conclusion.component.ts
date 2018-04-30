@@ -48,7 +48,22 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   isUdbytte() {
-    return this.state.aktier.type === 'udbytte' && this.state.mainState.type === 'stocks' && this.common.getCountryGroup() !== 8;
+    return this.state.aktier.type === 'udbytte' &&
+      this.state.mainState.type === 'stocks' &&
+      this.common.getCountryGroup() !== 8 &&
+      !this.noShowForUdbytte();
+  }
+
+  noShowForUdbytte() {
+    const 
+      specialCountries = ['BM','KY', 'VG', 'GG', 'IM', 'JE'],
+      country = this.state.mainState.land
+
+    return specialCountries.indexOf(country) > -1;
+  }
+
+  uncertainCountries() {
+    return ['CA', 'IT', 'US'].indexOf(this.state.mainState.land) > -1
   }
 
   isRente() {
@@ -95,6 +110,10 @@ export class SimpleConclusionComponent implements OnInit {
       {
         country: 'TR',
         pct: 20
+      },
+      {
+        country: 'BR',
+        pct: 25
       }
     
     ];
@@ -118,10 +137,10 @@ export class SimpleConclusionComponent implements OnInit {
     const satser: Object = {
       10: ['AU', 'BD', 'BE', 'CA', 'EE', 'PH', 'ID', 'IT', 'JP', 'CN', 'LV', 'LT', 'MA', 'NZ', 'PT', 'RO', 'RS', 'SG', 'LK', 'HU', 'UA', 'VN', 'ZM'],
       12: ['AR', 'TN'],
-      15: ['BR', 'CL', 'EG', 'IN', 'KR', 'MX', 'TH', 'PK', 'TT', 'TR'],
+      15: ['BR', 'CL', 'IN', 'KR', 'MX', 'TH', 'PK', 'TT', 'TR'],
       8: ['GH', 'GR'],
       5: ['IL', 'HR', 'PL', 'SI', 'VE'],
-      20: ['KE'],
+      20: ['KE', 'EG'],
       100: ['MY'],
       special12: ['JM', 'TZ']
     }

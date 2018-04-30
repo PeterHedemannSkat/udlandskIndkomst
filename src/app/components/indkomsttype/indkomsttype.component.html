@@ -1,5 +1,5 @@
 <app-radio-button 
-  [options] = "printTxt.transformToOptions('incomeTypes')"
+  [options] = "publicTypes(printTxt.transformToOptions('incomeTypes'))"
   [label]   = "text.get('vaelgIndkomst')"
   [(value)] = "state.mainState.type" 
 ></app-radio-button>

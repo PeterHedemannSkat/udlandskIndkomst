@@ -36,6 +36,8 @@ export class KapitalIndkomstSkatteTypeService {
       }
     ];
 
+
+
     const
       country = this.state.mainState.land,
       result = this.rente.find(el => el.land === country),
@@ -43,7 +45,10 @@ export class KapitalIndkomstSkatteTypeService {
         return el.skat === Number(result.skat);
       }).type;
 
+
     return type;
+    } else {
+      return -1;
     }
   }
 }

@@ -28,13 +28,31 @@ export class AktieSkatteTypeService {
         isNonDBO = this.common.getCountryGroup() === 8
 
       if (type === 'udbytte') {
+
+        
+
         return country === 'BR'? 3 : 1; 
+
       } else {
-        const creditCountries = ['ID', 'JM', 'GL', 'LV'];
+
+        /**
+         * Indonesien ID og Letland LV fjernet Jannies mail d. 30 april
+         */
+
+        const creditCountries = ['JM', 'GL'];
+
+        /**
+         * Maikens mail af 18. april tilføjes disse lande:  
+         */
+
+        const nyeCreditLande = ['BM', 'VG', 'KY', 'GG', 'IM', 'JE', 'BM', 'HK', 'LB', 'TT'];
+
+        const allCountries = creditCountries.concat(nyeCreditLande)
+
         if (country === 'BR') {
           return 13;
         } else {
-          return (creditCountries.indexOf(country) > -1) || isNonDBO ? 1 : 2 
+          return (allCountries.indexOf(country) > -1) || isNonDBO ? 1 : 2 
         }
       
       }
