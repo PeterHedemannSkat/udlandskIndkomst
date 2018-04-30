@@ -67,8 +67,11 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   isRente() {
-    return this.state.mainState.type === 'capitalIncome' && this.common.getCountryGroup() !== 8 && this.state.mainState.land !== 'GL' &&
-      this.getRentePct() !== 0; 
+    return this.state.mainState.type === 'capitalIncome' &&
+      this.common.getCountryGroup() !== 8 &&
+      this.state.mainState.land !== 'GL' &&
+      this.getRentePct() !== 0 &&
+      !this.uncertainCountries(); 
   }
 
   isGronland() {

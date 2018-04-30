@@ -79,6 +79,8 @@ export class TxtSharedService implements OnInit {
 
     check(txt: string) {
 
+        if (!txt || txt === '') return txt;
+
 
         this.mapper.forEach(element => {
 
