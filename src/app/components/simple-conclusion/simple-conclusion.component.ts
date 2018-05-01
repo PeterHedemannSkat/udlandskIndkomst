@@ -63,7 +63,7 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   uncertainCountries() {
-    return ['CL', 'GL' ,'IN', 'MX'].indexOf(this.state.mainState.land) > -1
+    return ['CL','IN', 'MX'].indexOf(this.state.mainState.land) > -1
   }
 
   isRente() {

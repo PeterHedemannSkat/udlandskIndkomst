@@ -56,7 +56,7 @@ export class KapitalIndkomstSkatteTypeService {
 
      
 
-    const specialLande = ['CL', 'GL' ,'IN', 'MX'].indexOf(country) > -1;
+    const specialLande = ['CL','IN', 'MX'].indexOf(country) > -1;
 
     if (specialLande) {
       return 13;
