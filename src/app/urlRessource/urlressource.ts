@@ -58,7 +58,8 @@ export class UrlRessourceService {
         const
             url_ = urlMapper.find(el => el.local === id),
             pointer = environment.production ? 'skatdk' : 'local',
-            url = url_[pointer];
+            url = environment.production ? `jsonData/${url_[pointer]}`: url_[pointer];
+
 
         return this.http.get(url).share().map(el => el.json());
     }
