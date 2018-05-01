@@ -21,8 +21,11 @@
   <p>{{text.get('beskatningrente_tekst')}}</p>
   <p class = "custom-5">{{text.get('beskatningrente_tekst_2')}}</p>
 
-  <p class = "custom-5">{{text.get('beskatningrente_tekst_3')}}</p>
   
+</div>
+
+<div *ngIf = "this.state.mainState.type === 'capitalIncome' && !uncertainCountries()">
+  <p class = "custom-5">{{text.get('beskatningrente_tekst_3')}}</p>
 </div>
 
 <div [innerHTML] = "text.get('forbeholdJura')"></div>

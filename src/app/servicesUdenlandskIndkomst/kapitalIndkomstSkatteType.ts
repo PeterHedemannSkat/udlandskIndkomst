@@ -54,11 +54,14 @@ export class KapitalIndkomstSkatteTypeService {
      * Returnerer ring ved særlige lande .... Anettes kommentar
      */
 
-    const specialLande = ['CA', 'IT', 'US'].indexOf(country) > -1;
+     
+
+    const specialLande = ['CL', 'GL' ,'IN', 'MX'].indexOf(country) > -1;
 
     if (specialLande) {
       return 13;
     }
+    
 
 
     return type;

@@ -63,7 +63,7 @@ export class SimpleConclusionComponent implements OnInit {
   }
 
   uncertainCountries() {
-    return ['CA', 'IT', 'US'].indexOf(this.state.mainState.land) > -1
+    return ['CL', 'GL' ,'IN', 'MX'].indexOf(this.state.mainState.land) > -1
   }
 
   isRente() {
@@ -71,6 +71,7 @@ export class SimpleConclusionComponent implements OnInit {
       this.common.getCountryGroup() !== 8 &&
       this.state.mainState.land !== 'GL' &&
       this.getRentePct() !== 0 &&
+      this.getRentePct() < 100 &&
       !this.uncertainCountries(); 
   }
 
@@ -138,7 +139,7 @@ export class SimpleConclusionComponent implements OnInit {
     const country = this.state.mainState.land;
 
     const satser: Object = {
-      10: ['AU', 'BD', 'BE', 'CA', 'EE', 'PH', 'ID', 'IT', 'JP', 'CN', 'LV', 'LT', 'MA', 'NZ', 'PT', 'RO', 'RS', 'SG', 'LK', 'HU', 'UA', 'VN', 'ZM'],
+      10: ['AU', 'BD', 'BE', 'CA', 'EE', 'PH', 'ID', 'IT', 'JP', 'CN', 'LV', 'LT', 'MA', 'NZ', 'PT', 'RO', 'RS', 'SG', 'LK', 'UA', 'VN', 'ZM', 'TW', 'UG'],
       12: ['AR', 'TN'],
       15: ['BR', 'CL', 'IN', 'KR', 'MX', 'TH', 'PK', 'TT', 'TR'],
       8: ['GH', 'GR'],
