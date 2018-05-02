@@ -57,13 +57,18 @@ export class SimpleConclusionComponent implements OnInit {
   noShowForUdbytte() {
     const 
       specialCountries = ['BM','KY', 'VG', 'GG', 'IM', 'JE'],
+      alsoThese = ['HK', 'IR', 'JO', 'LB', 'MY', 'GL', 'BR'],
       country = this.state.mainState.land
 
-    return specialCountries.indexOf(country) > -1;
+    return specialCountries.concat(alsoThese).indexOf(country) > -1;
   }
 
   uncertainCountries() {
     return ['CL','IN', 'MX'].indexOf(this.state.mainState.land) > -1
+  }
+
+  isNotBrasil() {
+    return this.state.mainState.land !== 'BR'
   }
 
   isRente() {
@@ -118,6 +123,10 @@ export class SimpleConclusionComponent implements OnInit {
       {
         country: 'BR',
         pct: 25
+      },
+      {
+        country: 'EG',
+        pct: 20
       }
     
     ];

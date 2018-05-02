@@ -8,7 +8,8 @@
   <p>{{text.get('skatteprocent')}} {{common.getCountryNameReg()}}: <b>{{getUdbyttePct()}} %</b> {{text.get('almUdbytter')}}</p>
   <!-- Hvis Brasilien skal denne ikke vises  ... -->
   <p>{{text.get('beskatningsudbytte_tekst')}}</p>
-  <p class = "custom-5">{{text.get('beskatningsudbytte_tekst_2')}}</p>
+  <p class = "custom-5" *ngIf="isNotBrasil()">{{text.get('beskatningsudbytte_tekst_2')}}</p>
+  <p *ngIf="!isNotBrasil()"> {{text.get('saerligBrazil_Udbytte')}}</p>
 
 
 </div>

@@ -29,6 +29,8 @@ export class AktieSkatteTypeService {
 
         if (country === 'GL') return 13; 
 
+        if (country === 'MY') return 2;             
+
         return country === 'BR'? 3 : 1; 
 
       } else {
@@ -43,7 +45,7 @@ export class AktieSkatteTypeService {
          * Maikens mail af 18. april tilføjes disse lande:  
          */
 
-        const nyeCreditLande = ['BM', 'VG', 'KY', 'GG', 'IM', 'JE', 'BM', 'HK', 'LB', 'TT'];
+        const nyeCreditLande = ['BM', 'VG', 'KY', 'GG', 'IM', 'JE', 'BM', 'HK', 'LB', 'TT', 'IR'];
 
         const allCountries = creditCountries.concat(nyeCreditLande)
 

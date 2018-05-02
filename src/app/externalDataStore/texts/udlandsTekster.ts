@@ -66,6 +66,10 @@ export const udlandstekster = [
     {
         id: 'gronland_renteTekst',
         da: 'Grønlands tekst ....'
+    },
+    {
+        id: 'beskatningsudbytte_tekst_2',
+        da: 'TEST'
     }
     
 ];
