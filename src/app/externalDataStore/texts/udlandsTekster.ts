@@ -70,6 +70,10 @@ export const udlandstekster = [
     {
         id: 'beskatningsudbytte_tekst_2',
         da: 'TEST'
+    },
+    {
+        id:'saerligBrazil_Udbytte',
+        da: 'Brazil'
     }
     
 ];

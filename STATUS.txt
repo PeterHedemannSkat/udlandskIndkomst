@@ -44,3 +44,5 @@ Cypern (CY), Estland EE, Philippinerne PH,
 >> privat => undtagelse [umulige spg.]
 >> off => dansk statsborger [Ja = 228/- DK beskatning, Nej 320/- Excep]
 
+
+

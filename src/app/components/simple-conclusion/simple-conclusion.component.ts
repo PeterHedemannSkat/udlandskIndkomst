@@ -50,14 +50,13 @@ export class SimpleConclusionComponent implements OnInit {
   isUdbytte() {
     return this.state.aktier.type === 'udbytte' &&
       this.state.mainState.type === 'stocks' &&
-      this.common.getCountryGroup() !== 8 &&
-      !this.noShowForUdbytte();
+      this.common.getCountryGroup() !== 8 
   }
 
   noShowForUdbytte() {
     const 
       specialCountries = ['BM','KY', 'VG', 'GG', 'IM', 'JE'],
-      alsoThese = ['HK', 'IR', 'JO', 'LB', 'MY', 'GL', 'BR'],
+      alsoThese = ['HK', 'IR', 'JO', 'LB', 'MY', 'GL'],
       country = this.state.mainState.land
 
     return specialCountries.concat(alsoThese).indexOf(country) > -1;
@@ -76,8 +75,7 @@ export class SimpleConclusionComponent implements OnInit {
       this.common.getCountryGroup() !== 8 &&
       this.state.mainState.land !== 'GL' &&
       this.getRentePct() !== 0 &&
-      this.getRentePct() < 100 &&
-      !this.uncertainCountries(); 
+      this.getRentePct() < 100
   }
 
   isGronland() {
