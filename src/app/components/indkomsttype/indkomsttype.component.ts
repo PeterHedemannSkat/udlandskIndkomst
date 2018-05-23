@@ -3,6 +3,7 @@ import { CommonUdlandsService } from "../../servicesUdenlandskIndkomst/commonSer
 import { StateService } from "../../state/stateContainer";
 import { TxtSharedService } from "../../TxtSharedService/txtSharedService";
 import { PrintService } from "../../TxtSharedService/printServices";
+import { environment } from "../../../environments/environment";
 
 @Component({
   selector: "app-indkomsttype",
@@ -20,8 +21,11 @@ export class IndkomsttypeComponent implements OnInit {
   ngOnInit() {}
 
   publicTypes(arr: any) {
-    const publicItems = ["capitalIncome", "stocks", "loon", "pension"];
+    const testEnv = true,
+      productionItems = ["capitalIncome", "stocks"],
+      developmentItems = ["capitalIncome", "stocks", "loon", "pension"],
+      deployed = testEnv ? developmentItems : productionItems;
 
-    return arr.filter(el => publicItems.indexOf(el.value) > -1);
+    return arr.filter(el => deployed.indexOf(el.value) > -1);
   }
 }
