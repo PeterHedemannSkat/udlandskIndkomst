@@ -75,6 +75,10 @@ export const udlandstekster = [
     da: "TEST"
   },
   {
+    id: "beskatningrente_tekst_2",
+    da: "TEST Rente"
+  },
+  {
     id: "saerligBrazil_Udbytte",
     da: "Brazil"
   },

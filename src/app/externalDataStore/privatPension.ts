@@ -486,8 +486,8 @@ export const privatPension = [
   },
   {
     "land": "IL",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "IT",
@@ -546,8 +546,8 @@ export const privatPension = [
   },
   {
     "land": "CN",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "KG",
@@ -571,8 +571,8 @@ export const privatPension = [
   },
   {
     "land": "KW",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "LA",
@@ -586,8 +586,8 @@ export const privatPension = [
   },
   {
     "land": "LV",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "LB",
@@ -611,13 +611,13 @@ export const privatPension = [
   },
   {
     "land": "LT",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "LU",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "MO",
@@ -631,8 +631,8 @@ export const privatPension = [
   },
   {
     "land": "MK",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "MW",
@@ -696,8 +696,8 @@ export const privatPension = [
   },
   {
     "land": "MX",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "FM",
@@ -931,8 +931,8 @@ export const privatPension = [
   },
   {
     "land": "CH",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "SN",
@@ -941,8 +941,8 @@ export const privatPension = [
   },
   {
     "land": "RS",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "SC",
@@ -966,8 +966,8 @@ export const privatPension = [
   },
   {
     "land": "SI",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "SO",
@@ -1091,8 +1091,8 @@ export const privatPension = [
   },
   {
     "land": "CZ",
-    "Indkomst": "-",
-    "Skat": "-"
+    "Indkomst": "X",
+    "Skat": "X"
   },
   {
     "land": "TG",

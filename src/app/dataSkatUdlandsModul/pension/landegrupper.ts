@@ -19,18 +19,50 @@ export const grupper = [
     /** fungerer [off, privat]  */
     {
         gruppe: 'D',
-        lande: ['IT', 'VN', 'CY', 'EE', 'PH', 'IE', 'HR', 'LV', 'LT', 'MT', 'MA', 'MX', 'NZ', 'PL', 'SG', 'SI',
+        lande: ['IT', 'VN', 'CY', 'EE', 'PH', 'IE', 'HR', 'MT', 'MX', 'NZ', 'PL', 'PT', 'SG', 'SI',
          'GB', 'ZA', 'TW', 'UG', 'UA', 'AT']
     },
     /** fungerer Montenegro Holland [off] */
     {
         gruppe: 'E',
-        lande: ['ME', 'NL', 'RO', 'SK', 'LK', 'TZ', 'TH', 'TN', 'VE']
+        lande: ['ME', 'NL', 'RO', 'LK', 'TZ', 'TH', 'TN', 'VE']
     },
     /** Tyskland OK, USA */
     {
         gruppe: 'singles',
-        lande: ['DE','BE','US','JP']
+        lande: ['DE', 'BE', 'US', 'JP', 'KE', 'MA', 'KR']
+    },
+    {
+        gruppe: 'newGroup',
+        lande: ['AU']
+    },
+    {
+        gruppe: 'newGroup2',
+        lande: ['BD']
+    },
+    {
+        gruppe: 'newGroup3',
+        lande: ['GE']
+    },
+    {
+        gruppe: 'newGroup4',
+        lande: ['GH']
+    },
+    {
+        gruppe: 'newGroup5',
+        lande: ['GR']
+    },
+    {
+        gruppe: 'newGroup6',
+        lande: ['GL']
+    },
+    {
+        gruppe: 'newGroup7',
+        lande: ['IL']
+    },
+    {
+        gruppe: 'newGroup8',
+        lande: ['YU', 'CN', 'KW', 'LV', 'LT', 'LU', 'MK', 'MX', 'RO', 'RS', 'SI', 'CZ']
     }
 ];
 

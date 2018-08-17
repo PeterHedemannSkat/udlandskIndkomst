@@ -60,7 +60,7 @@ export const pensionstxt = [{
   },
   {
     id: '16',
-    da: '???'
+    da: 'Er du omfattet af undtagelsen?'
   },
   {
     id: '17',
@@ -105,6 +105,18 @@ export const pensionstxt = [{
   {
     id: '98',
     da: 'Er du omfattet af undtagelserne?'
+  },
+  {
+    id: '101',
+    da: 'Er din private pension fra Ghana for tidligere tjenesteydelser udført i Ghana?'
+  },
+  {
+    id: '102',
+    da: 'Ville denne pension have været fritaget for beskatning in Ghana, såfremt du var hjemmehørende i Ghana?'
+  },
+  {
+    id: '103',
+    da: 'Er du statsborger fra &#country#&?'
   }
 ];
 
@@ -119,7 +131,7 @@ export const specialPensionTxt = [
   },
   {
     id: '16',
-    da: 'Kenya har som hovedregel ret til at beskatte kenyanske, private pensioner, der stammer fra et tjenesteforhold. Hvis pensionen ikke stammer fra et ansættelsesforhold kan Danmark beskatte pensionen (undtagelsesbestemmelse)'
+    da: '&#country#& har som hovedregel ret til at beskatte private pensioner, der stammer fra et tjenesteforhold. Hvis pensionen ikke stammer fra et ansættelsesforhold kan Danmark beskatte pensionen (undtagelsesbestemmelse)'
   },
   {
     id: '17',

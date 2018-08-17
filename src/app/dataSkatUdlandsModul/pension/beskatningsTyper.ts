@@ -238,6 +238,48 @@ export const pensionsSaerligeBeskatningsTyper = [
     }
   },
   {
+    'LandId': 'BE',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true, true]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'BE',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true, false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'BE',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
     'LandId': 'US',
     'pensionsType': 'privat',
     'LandGruppe': '',
@@ -320,15 +362,466 @@ export const pensionsSaerligeBeskatningsTyper = [
       'indkomst': 0,
       'skat': 0
     }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'social',
+    'LandGruppe': 'newGroup',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'social',
+    'LandGruppe': 'newGroup',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup2',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup2',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup3',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup3',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup3',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup3',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup4',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup4',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup4',
+    'firstBoolean': {
+      'state': true,
+      'value': false
+    },
+    'values': [[true, false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup4',
+    'firstBoolean': {
+      'state': false,
+      'value': null
+    },
+    'values': [[true, true]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup5',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup5',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup5',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup5',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup6',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'privat',
+    'LandGruppe': 'newGroup6',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup7',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup7',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup8',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': '',
+    'pensionsType': 'off',
+    'LandGruppe': 'newGroup8',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'KE',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'KE',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'MA',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'MA',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'MA',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'MA',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 320,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'KR',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'KR',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
   }
+
+
+
+
+
+
+
+
+
+
 
 
 ];
 
-/** 
- * 
- * Inkl: Tyskland, Belgien
- * 
- * mangler:
- * USA
- */

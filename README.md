@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+privatPension.json 
+Israel (IL) skal rettet til X,X
+Kina ændres (CN) til X,X
+KW Kuweit til X,X
+LV Letland til X,X
+LT Litauen til X,X
+LU Luxembourg til X,X
+MK Makedonien til X,X
+MX Mexico til X,X
+CH Schweiz X,X
+RS Serbien X,X
+SK Slovenien til X,X
+CZ Tjekkiet til X,X

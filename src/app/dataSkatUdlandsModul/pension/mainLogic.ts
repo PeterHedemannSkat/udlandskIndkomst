@@ -210,16 +210,6 @@ export const mainLogic = [
     'TxtId': 13
   },
   {
-    'LandId': 'AU',
-    'LandGruppe': '',
-    'Sub': '',
-    'SpgIdIfMore': '',
-    'SpgNr': 1,
-    'Type': 'social,off',
-    'ShowIfSpg1EqualTo': '',
-    'TxtId': 14
-  },
-  {
     'LandId': '',
     'LandGruppe': 'D',
     'Sub': '',
@@ -280,16 +270,6 @@ export const mainLogic = [
     'TxtId': 19
   },
   {
-    'LandId': 'KR',
-    'LandGruppe': '',
-    'Sub': '',
-    'SpgIdIfMore': '',
-    'SpgNr': 1,
-    'Type': 'off',
-    'ShowIfSpg1EqualTo': '',
-    'TxtId': 19
-  },
-  {
     'LandId': 'BE',
     'LandGruppe': '',
     'Sub': '',
@@ -341,7 +321,174 @@ export const mainLogic = [
     'ShowIfSpg1EqualTo': true,
     'TxtId': 21
 
-  }
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'social,off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 99
+
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup2',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 99
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup3', // Georgien herunder 
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 98
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup3',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 99
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup4', // Georgien herunder 
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 101
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup4', // Georgien herunder 
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 2,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 102
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup4',
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': true,
+    'TxtId': 99
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup5', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 103
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup5', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 103
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup6', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 98
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup7', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 99
+  },
+  {
+    'LandId': '',
+    'LandGruppe': 'newGroup8', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 99
+  },
+  {
+    'LandId': 'KE',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 16
+  },
+  {
+    'LandId': 'MA',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 16
+  },
+  {
+    'LandId': 'MA',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 99
+  },
+  {
+    'LandId': 'KR',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 99
+  },
+
+
+
+
+
+
 
 
 ];

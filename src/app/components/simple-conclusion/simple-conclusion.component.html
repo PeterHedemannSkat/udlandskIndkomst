@@ -14,8 +14,14 @@
 
 </div>
 
-<div *ngIf="isUdbytte()">
+<!-- beskatningsudbytte_tekst_2 Du skal selvangive dit udbytte *** skal med på alle credittekster -->
+
+<div *ngIf="state.mainState.type === 'udbytte'">
   <p class="custom-5" *ngIf="isNotBrasil()">{{text.get('beskatningsudbytte_tekst_2')}}</p>
+</div>
+
+
+<div *ngIf="isUdbytte()">
   <p *ngIf="!isNotBrasil()"> {{text.get('saerligBrazil_Udbytte')}}</p>
 </div>
 
@@ -33,8 +39,12 @@
   {{idNameTxt()}}
 </div>
 
-<div *ngIf="isRente()">
+<div *ngIf="state.mainState.type === 'capitalIncome'">
   <p class="custom-5">{{text.get('beskatningrente_tekst_2')}}</p>
+
+</div>
+
+<div *ngIf="isRente()">
 </div>
 
 <div *ngIf="this.state.mainState.type === 'capitalIncome' && !uncertainCountries()">

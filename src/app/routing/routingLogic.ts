@@ -196,7 +196,6 @@ export class RoutingService {
                 fn: () => {
 
                     const dataArray = this.state.pension.values
-                    console.log(dataArray)
                     return dataArray.length && dataArray.every(el => el === false || el === true);
                 }
             },

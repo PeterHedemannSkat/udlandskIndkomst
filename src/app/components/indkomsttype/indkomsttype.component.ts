@@ -21,7 +21,7 @@ export class IndkomsttypeComponent implements OnInit {
   ngOnInit() {}
 
   publicTypes(arr: any) {
-    const testEnv = false,
+    const testEnv = true,
       productionItems = ["capitalIncome", "stocks"],
       developmentItems = ["capitalIncome", "stocks", "loon", "pension"],
       deployed = testEnv ? developmentItems : productionItems;

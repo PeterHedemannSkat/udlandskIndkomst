@@ -54,32 +54,48 @@ export class PensionsSkatteTypeService {
       return this.taxTranslation(obj_).toString();
     }
 
-
-
   }
-
-  
-
 
   isRegular() {
 
     const isRegular = !this.countryGroup();
 
+    /** er det et normalt, hvor der ikke kræves
+     * særlige spørgsmål
+     */
     if (isRegular) {
 
       return true;
-
+    // er i gruppen af komplekse lande, der kræves altså særlige spørgsmål
+    // tjekker i ekstern json om der findes noget særlig
+    // er ...Indkomst = - returnes false. Landet er derfor noget særligt 
+    // isRegular = false 
     } else {
 
       const type = <any[]>this.getPensionData();
 
+      // sikring af type eksisterer som data
       if (type && type.length) {
 
         const country_ = type.find(el => {
           return el.land === this.state.mainState.land;
         });
 
-        return country_ ? country_.Indkomst !== '-' : false;
+        const pensionType = this.state.pension.type;
+
+        const special = [{ id: 'BD', type: ['privat', 'social'] }]
+          .reduce((state, el) => {
+
+            if (country_.land === el.id && el.type.indexOf(pensionType) > -1) {
+
+              return true;
+            } else {
+              return state;
+            }
+          }, false);
+
+
+        return country_ ? (country_.Indkomst !== '-' || special) : false;
 
       }
 
@@ -161,6 +177,7 @@ export class PensionsSkatteTypeService {
 
   taxTranslation(raw: any) {
 
+
     const translate = [
       {
         skat: 786,
@@ -187,6 +204,7 @@ export class PensionsSkatteTypeService {
         skat: '-',
         type: 5
       }
+
 
     ];
 
