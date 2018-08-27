@@ -172,6 +172,10 @@ export const specialPensionTxt = [
   {
     id: '98',
     da: 'Danmark har som hovedregel ret til at beskatte din pension fra &#country#&.'
+  },
+  {
+    id: 'dobbelt',
+    da: 'Har du dobbelt statsborgerskab, skal du svare nej.'
   }
 ]
 

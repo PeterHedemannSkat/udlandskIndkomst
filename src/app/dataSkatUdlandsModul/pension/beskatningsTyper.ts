@@ -247,8 +247,8 @@ export const pensionsSaerligeBeskatningsTyper = [
     },
     'values': [[true, true]],
     'skatningstype': {
-      'indkomst': 320,
-      'skat': '-'
+      'indkomst': 290,
+      'skat': 786
     }
   },
   {
@@ -270,8 +270,8 @@ export const pensionsSaerligeBeskatningsTyper = [
     'pensionsType': 'off',
     'LandGruppe': '',
     'firstBoolean': {
-      'state': false,
-      'value': null
+      'state': true,
+      'value': false
     },
     'values': [[false]],
     'skatningstype': {
@@ -810,7 +810,64 @@ export const pensionsSaerligeBeskatningsTyper = [
       'indkomst': 290,
       'skat': 786
     }
+  },
+  {
+    'LandId': 'VN',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
+  },
+  {
+    'LandId': 'VN',
+    'pensionsType': 'off',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'VN',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[true]],
+    'skatningstype': {
+      'indkomst': 290,
+      'skat': 786
+    }
+  },
+  {
+    'LandId': 'VN',
+    'pensionsType': 'privat',
+    'LandGruppe': '',
+    'firstBoolean': {
+      'state': null,
+      'value': null
+    },
+    'values': [[false]],
+    'skatningstype': {
+      'indkomst': 228,
+      'skat': '-'
+    }
   }
+
 
 
 

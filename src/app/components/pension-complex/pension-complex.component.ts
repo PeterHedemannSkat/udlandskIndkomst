@@ -69,8 +69,21 @@ export class PensionComplexComponent implements OnInit {
     const exeption = [98, 23, 21]
 
     return all.find(el => {
-      return exeption.indexOf(el.TxtId) > -1    
+      return exeption.indexOf(el.TxtId) > -1;
     })
+
+  }
+
+  specialtext() {
+    const dobbelNationalityTxt = [
+      {c: 'IT', t: 'off'}
+    ],
+      country = this.state.mainState.land,
+      type = this.state.pension.type;
+
+    return dobbelNationalityTxt.find(el => {
+      return el.c === country && el.t === type;
+    });
 
   }
 

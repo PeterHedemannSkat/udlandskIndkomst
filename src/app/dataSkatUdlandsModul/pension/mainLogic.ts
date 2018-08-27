@@ -483,6 +483,27 @@ export const mainLogic = [
     'ShowIfSpg1EqualTo': null,
     'TxtId': 99
   },
+  {
+    'LandId': 'VN',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 99
+  },
+  {
+    'LandId': 'VN',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 98
+  },
+
 
 
 
