@@ -62,7 +62,7 @@ export const grupper = [
     },
     {
         gruppe: 'newGroup8',
-        lande: ['YU', 'CN', 'KW', 'LV', 'LT', 'LU', 'MK', 'MX', 'RO', 'RS', 'SI', 'CZ']
+        lande: ['YU', 'CN', 'KW', 'LV', 'LT', 'LU', 'MK', 'MX', 'RO', 'RS', 'SI', 'CZ', 'AZ']
     }
 ];
 

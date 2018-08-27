@@ -61,8 +61,8 @@ export const offentligPension = [
   },
   {
     "land": "AZ",
-    "Indkomst": 290,
-    "Skat": 786
+    "Indkomst": "-",
+    "Skat": "-"
   },
   {
     "land": "AU",
