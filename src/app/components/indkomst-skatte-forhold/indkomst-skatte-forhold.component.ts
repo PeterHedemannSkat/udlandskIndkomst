@@ -29,12 +29,12 @@ export class IndkomstSkatteForholdComponent implements OnInit {
 
   ngOnInit() {
 
-    const is = !!this.taxPeriods.periods
-    
+    const is = !!this.taxPeriods.periods;
+
     if (!is) {
       this.taxPeriods.periods = this.taxPeriods.getPeriods()
     }
-  
+
   }
 
   printTextSkatteType() {
