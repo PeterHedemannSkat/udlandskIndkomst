@@ -19,18 +19,18 @@ export const grupper = [
     /** fungerer [off, privat]  */
     {
         gruppe: 'D',
-        lande: ['IT', 'CY', 'EE', 'PH', 'IE', 'HR', 'MT', 'MX', 'NZ', 'PL', 'PT', 'SG', 'SI',
+        lande: ['CY', 'EE', 'PH', 'IE', 'HR', 'MT', 'MX', 'NZ', 'PL', 'PT', 'SG', 'SI',
          'GB', 'ZA', 'TW', 'UG', 'UA', 'AT']
     },
     /** fungerer Montenegro Holland [off] */
     {
         gruppe: 'E',
-        lande: ['ME', 'NL', 'RO', 'LK', 'TZ', 'TH', 'TN', 'VE']
+        lande: ['ME', 'NL', 'RO', 'SK', 'LK', 'TZ', 'TH', 'TN', 'VE']
     },
     /** Tyskland OK, USA */
     {
         gruppe: 'singles',
-        lande: ['DE', 'BE', 'US', 'JP', 'KE', 'MA', 'KR', 'VN']
+      lande: ['DE', 'BE', 'US', 'JP', 'KE', 'MA', 'KR', 'VN', 'IT']
     },
     {
         gruppe: 'newGroup',

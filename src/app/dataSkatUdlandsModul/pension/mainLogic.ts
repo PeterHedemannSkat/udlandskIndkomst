@@ -237,7 +237,7 @@ export const mainLogic = [
     'SpgNr': 1,
     'Type': 'privat',
     'ShowIfSpg1EqualTo': '',
-    'TxtId': 16
+    'TxtId': 104
   },
   { /* fx SK, slovakiet */
     'LandId': '',
@@ -444,16 +444,6 @@ export const mainLogic = [
     'TxtId': 99
   },
   {
-    'LandId': 'KE',
-    'LandGruppe': '', // statsborger på off/privat
-    'Sub': '',
-    'SpgIdIfMore': '',
-    'SpgNr': 1,
-    'Type': 'off',
-    'ShowIfSpg1EqualTo': null,
-    'TxtId': 16
-  },
-  {
     'LandId': 'MA',
     'LandGruppe': '', // statsborger på off/privat
     'Sub': '',
@@ -503,15 +493,24 @@ export const mainLogic = [
     'ShowIfSpg1EqualTo': null,
     'TxtId': 98
   },
-
-
-
-
-
-
-
-
-
+  {
+    'LandId': 'IT',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'off',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 98
+  },
+  {
+    'LandId': 'IT',
+    'LandGruppe': '', // statsborger på off/privat
+    'Sub': '',
+    'SpgIdIfMore': '',
+    'SpgNr': 1,
+    'Type': 'privat',
+    'ShowIfSpg1EqualTo': null,
+    'TxtId': 98
+  }
 ];
-
-

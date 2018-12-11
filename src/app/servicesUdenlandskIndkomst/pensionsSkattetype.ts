@@ -20,10 +20,10 @@ export class PensionsSkatteTypeService {
     return this.ressource.getData('app/socialPension');
   }
 
-  constructor (
+  constructor(
     public state: StateService,
     private ressource: UrlRessourceService
-  ) {}
+  ) { }
 
   getPensionsBeskatning() {
 
@@ -42,9 +42,9 @@ export class PensionsSkatteTypeService {
           skat: country_.Skat
         };
 
-        const taxType = this.taxTranslation({skatningstype: a}) 
+        const taxType = this.taxTranslation({ skatningstype: a })
 
-        return this.taxTranslation({skatningstype: a}).toString();
+        return this.taxTranslation({ skatningstype: a }).toString();
 
       }
 
@@ -66,10 +66,10 @@ export class PensionsSkatteTypeService {
     if (isRegular) {
 
       return true;
-    // er i gruppen af komplekse lande, der kræves altså særlige spørgsmål
-    // tjekker i ekstern json om der findes noget særlig
-    // er ...Indkomst = - returnes false. Landet er derfor noget særligt 
-    // isRegular = false 
+      // er i gruppen af komplekse lande, der kræves altså særlige spørgsmål
+      // tjekker i ekstern json om der findes noget særlig
+      // er ...Indkomst = - returnes false. Landet er derfor noget særligt 
+      // isRegular = false 
     } else {
 
       const type = <any[]>this.getPensionData();
@@ -177,11 +177,10 @@ export class PensionsSkatteTypeService {
 
   taxTranslation(raw: any) {
 
-
     const translate = [
       {
-        skat: 786,
         indkomst: 290,
+        skat: 786,
         type: 1
       },
       {
@@ -203,9 +202,12 @@ export class PensionsSkatteTypeService {
         indkomst: 100,
         skat: '-',
         type: 5
+      },
+      {
+        indkomst: 'none',
+        skat: 'none',
+        type: 6
       }
-
-
     ];
 
     if (!raw) {
@@ -215,7 +217,7 @@ export class PensionsSkatteTypeService {
     const type = translate.find(el => el.indkomst === raw.skatningstype.indkomst && el.skat === raw.skatningstype.skat);
 
     return type ? type.type : 13;
-
+    
   }
 
   countryGroup() {
