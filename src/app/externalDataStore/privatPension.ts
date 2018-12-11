@@ -491,7 +491,7 @@ export const privatPension = [
   },
   {
     "land": "IT",
-    "Indkomst": "-",
+    "Indkomst": 290,
     "Skat": "-"
   },
   {

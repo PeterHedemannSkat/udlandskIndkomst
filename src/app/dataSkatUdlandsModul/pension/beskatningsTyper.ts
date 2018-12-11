@@ -359,8 +359,8 @@ export const pensionsSaerligeBeskatningsTyper = [
     },
     'values': [[true]],
     'skatningstype': {
-      'indkomst': 0,
-      'skat': 0
+      'indkomst': 'none',
+      'skat': 'none'
     }
   },
   {
@@ -429,8 +429,8 @@ export const pensionsSaerligeBeskatningsTyper = [
     },
     'values': [[true]],
     'skatningstype': {
-      'indkomst': 290,
-      'skat': 786
+      'indkomst': 228,
+      'skat': '-'
     }
   },
   {
@@ -443,7 +443,7 @@ export const pensionsSaerligeBeskatningsTyper = [
     },
     'values': [[false]],
     'skatningstype': {
-      'indkomst': 228,
+      'indkomst': 320,
       'skat': '-'
     }
   },
@@ -721,7 +721,7 @@ export const pensionsSaerligeBeskatningsTyper = [
       'state': null,
       'value': null
     },
-    'values': [[true]],
+    'values': [[false]],
     'skatningstype': {
       'indkomst': 290,
       'skat': 786

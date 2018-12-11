@@ -117,6 +117,10 @@ export const pensionstxt = [{
   {
     id: '103',
     da: 'Er du statsborger fra &#country#&?'
+  },
+  {
+    id: '104',
+    da: 'Er du omfattet af undtagelserne?'
   }
 ];
 
@@ -174,8 +178,16 @@ export const specialPensionTxt = [
     da: 'Danmark har som hovedregel ret til at beskatte din pension fra &#country#&.'
   },
   {
+    id: '103',
+    da: 'Danmark har som hovedregel ret til at beskatte din pension fra Grækenland. Hvis du er græsk statsborger, kan Grækenland beskatte pensionen.'
+  },
+  {
     id: 'dobbelt',
     da: 'Har du dobbelt statsborgerskab, skal du svare nej.'
+  },
+  {
+    id: '104',
+    da: 'Kenya har som hovedregel ret til at beskatte din private pension fra Kenya. Hvis pensionen stammer fra et ansættelsesforhold kan Danmark beskatte pensionen (undtagelsesbestemmelse)'
   }
 ]
 

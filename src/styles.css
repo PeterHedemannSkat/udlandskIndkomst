@@ -1,137 +1,135 @@
 body > app-root .main-content {
-    max-width: 560px;
-    margin: 0 auto;
-} 
+  max-width: 560px;
+  margin: 0 auto;
+}
 
 .elements .row:not(:last-child) {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
-.btn, .form-control {
-    border-radius:0 !important;
+.btn,
+.form-control {
+  border-radius: 0 !important;
 }
 
-.btn-group-vertical>.btn:last-child:not(:first-child) {
-    border-bottom-left-radius:0 !important;
-
+.btn-group-vertical > .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0 !important;
 }
 
-.btn-group-vertical>.btn:first-child:not(:first-child) {
-    border-top-right-radius:0 !important;
-
+.btn-group-vertical > .btn:first-child:not(:first-child) {
+  border-top-right-radius: 0 !important;
 }
 
 .underline {
-    border-bottom: 1px dotted white;
+  border-bottom: 1px dotted white;
 }
 
 .lable-for-radio {
-    display: block;
-    margin:0.5em 0;
+  display: block;
+  margin: 0.5em 0;
 }
 
 app-radio-button .btn-group-vertical {
-    width: 100%;
+  width: 100%;
 }
 
 app-radio-button .btn-group-vertical .btn {
-    padding: 1.3em;
-    text-align: initial;
+  padding: 1.3em;
+  text-align: initial;
 }
 
 app-chosen .chosen-container-single .chosen-single {
-    background-position: 2px 16px;
+  background-position: 2px 16px;
 }
 
-app-chosen .chosen-container-single .chosen-single, .chosen-container-single .chosen-results, .chosen-container-single .chosen-search {
-    border-radius: 0;
-    font-size: 1.3rem;
-    line-height: 2.2rem;
-    text-align: left;
-} 
-
-app-chosen .chosen-container-single .chosen-single {
-    border-color: #395f77;
-    min-height: 3rem;
-    padding: 4px 12px;
+app-chosen .chosen-container-single .chosen-single,
+.chosen-container-single .chosen-results,
+.chosen-container-single .chosen-search {
+  border-radius: 0;
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  text-align: left;
 }
 
 app-chosen .chosen-container-single .chosen-single {
-    background: white;
+  border-color: #395f77;
+  min-height: 3rem;
+  padding: 4px 12px;
 }
 
+app-chosen .chosen-container-single .chosen-single {
+  background: white;
+}
 
-.button-wrapper  {
-    margin-top: 1.5em;
+.button-wrapper {
+  margin-top: 1.5em;
 }
 
 .progress-bar-custom {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .well h2 {
-    font-size: 2.5rem;
-} 
+  font-size: 2.5rem;
+}
 
 .router-outlet {
-    min-height: 20em !important;
+  min-height: 20em !important;
 }
 
 .period-tax {
-    padding-left: 1em;
-    border-left: 1px solid black;
-    margin-left:1em;
+  padding-left: 1em;
+  border-left: 1px solid black;
+  margin-left: 1em;
 }
 
 .result-indkomst h3 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .result-indkomst h4 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .period-header {
-    margin-top:1em;
-    border-bottom: 1px dotted gray;
+  margin-top: 1em;
+  border-bottom: 1px dotted gray;
 }
 
 .horizontal-test {
-    overflow-x: scroll;
-
+  overflow-x: auto;
 }
 
 .expanded-sub {
-    width:100em;
+  width: 100em;
 }
 
 .horizontal-test ul {
-    margin: 1em 0;
-    padding-left: 0;
+  margin: 1em 0;
+  padding-left: 0;
 }
 
 .horizontal-test li {
-    display: inline-block;
+  display: inline-block;
 }
 
-
-.horizontal-test li span:last-child{
-    display: inline-block;
-    padding: 0 1em;
+.horizontal-test li span:last-child {
+  display: inline-block;
+  padding: 0 1em;
 }
 
 .test-area {
-    background-color: coral;
-    height: 30em;
+  background-color: coral;
+  height: 30em;
 }
 
-button.btn.btn-primary:active, button.btn.btn-primary:focus  {
-
-    background-color:#5a8d18;
+button.btn.btn-primary:active,
+button.btn.btn-primary:focus {
+  background-color: #5a8d18;
 }
 
-.btn.skts-btn-secondary:focus, .btn.skts-btn-secondary:active {
-
-    background-color: transparent;
-    color: #333;;
+.btn.skts-btn-secondary:focus,
+.btn.skts-btn-secondary:active {
+  background-color: transparent;
+  color: #333;
 }
