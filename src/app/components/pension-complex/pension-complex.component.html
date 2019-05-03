@@ -1,40 +1,27 @@
-<div *ngIf = "isException()">
-  <div [innerHTML] = "text.get('ringKC')"></div>
+<div *ngIf="isException()">
+	<div [innerHTML]="text.get('ringKC')"></div>
 </div>
 
 <hr>
-  
+
 <div *ngFor="let spg of getSpg_(1); let i = index">
 
-    <p *ngIf = "text.get(spg.TxtId.toString(), 'specialPensionTxt')">
-      {{text.get(spg.TxtId.toString(), 'specialPensionTxt')}}
-    </p>
+	<div *ngIf="text.get(spg.TxtId.toString(), 'specialPensionTxt')" [innerHTML]="text.get(spg.TxtId.toString(), 'specialPensionTxt')">
 
-    <app-ja-nej 
-      [(value)] = "state.pension.values[i]"
-      [label]   = "text.get(spg.TxtId.toString(), 'pensionstxt')" 
-    ></app-ja-nej> 
+	</div>
+
+	<app-ja-nej [(value)]="state.pension.values[i]" [label]="text.get(spg.TxtId.toString(), 'pensionstxt')"></app-ja-nej>
 
 
 </div>
 
 
-<div *ngFor = "let spg of showGroupTwo(); let i = index">
+<div *ngFor="let spg of showGroupTwo(); let i = index">
 
-    <app-ja-nej 
-      [(value)] = "state.pension.values[i + getSpg_(1).length]"
-      [label]   = "text.get(spg.TxtId.toString(), 'pensionstxt')" 
-    ></app-ja-nej> 
+	<app-ja-nej [(value)]="state.pension.values[i + getSpg_(1).length]" [label]="text.get(spg.TxtId.toString(), 'pensionstxt')"></app-ja-nej>
 
 </div>
 
 <div *ngIf="specialtext()">
-  {{text.get('dobbelt', 'specialPensionTxt')}}
+	{{text.get('dobbelt', 'specialPensionTxt')}}
 </div>
-
-
-
-
-
-
-

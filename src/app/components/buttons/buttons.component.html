@@ -1,36 +1,32 @@
 <div class="button-wrapper">
-  <div class = "pull-left">
-      <div>
-        <button
-        type = "button" 
-        *ngIf="router('back')" 
+  <div class="pull-left">
+    <div data-stat="1">
+      <button
+        type="button"
+        *ngIf="router('back')"
+        (click)="log($event, 'Tilbage')"
         class="btn pull-left skts-btn-secondary"
-        [routerLink]="router('back')">
-          Tilbage 
+        [routerLink]="router('back')"
+      >
+        Tilbage
       </button>
     </div>
-    <div>
-
-    </div>
-
+    <div></div>
   </div>
 
-  <div class = "pull-right">
-      <div>
-          <button
-          type = "button" 
-          *ngIf="router('forward')"
-          class="btn btn-primary"
-          [disabled] = "disabled()"
-          [routerLink]="router('forward')">
-            Næste
-          
-        </button>
-      </div>
-      <div class="text-center">
-
-      </div>
+  <div class="pull-right">
+    <div data-stat="1">
+      <button
+        type="button"
+        *ngIf="router('forward')"
+        class="btn btn-primary"
+        (click)="log($event, 'Næste')"
+        [disabled]="disabled()"
+        [routerLink]="router('forward')"
+      >
+        Næste
+      </button>
+    </div>
+    <div class="text-center"></div>
   </div>
 </div>
-
-
